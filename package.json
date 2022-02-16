@@ -4,7 +4,7 @@
   "description": "Réservation en ligne de menus provenant de restaurants gastronomiques.",
   "main": "index.html",
   "scripts": {
-    "sass": "sass --watch ./sass/styles.scss:./css/styles.css"
+    "sass": "sass --watch ./styles.scss:./css/styles.css"
   },
   "repository": {
     "type": "git",
