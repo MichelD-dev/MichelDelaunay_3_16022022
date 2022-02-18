@@ -225,7 +225,7 @@ header {
   width: 100%;
   padding: 10px 30px 15px 15px;
 }
-.restaurant-card__text *:not(.restaurant-card__title) {
+.restaurant-card__text * :not(.restaurant-card__title) {
   color: #666;
   /*FIXME utilisation not() ok (specificité)?*/
   /*FIXME not() ne fonctionne pas?*/

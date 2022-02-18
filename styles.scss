@@ -165,10 +165,7 @@ header {
       color: #666;
     }
     &_active {
-      background-color: color.scale(
-        $primary-color,
-        $lightness: 90%
-      );
+      background-color: color.scale($primary-color, $lightness: 90%);
       &-icon {
         color: $primary-color;
       }
@@ -245,7 +242,7 @@ header {
     align-items: start;
     width: 100%;
     padding: 10px 30px 15px 15px;
-    & *:not(.restaurant-card__title) {
+    & * :not(.restaurant-card__title) {
       color: #666;
       /*FIXME utilisation not() ok (specificité)?*/
       /*FIXME not() ne fonctionne pas?*/
