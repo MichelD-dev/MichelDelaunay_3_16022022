@@ -165,10 +165,7 @@ header {
       color: #666;
     }
     &_active {
-      background-color: color.scale(
-        $primary-color,
-        $lightness: 90%
-      );
+      background-color: color.scale($primary-color, $lightness: 90%);
       &-icon {
         color: $primary-color;
       }
