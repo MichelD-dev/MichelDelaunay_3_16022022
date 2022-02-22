@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Réservation en ligne de menus provenant de restaurants gastronomiques."
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/9adb84594d.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Ohmyfood | Le délice des sens</title>
+  </head>
+
+  <body>
+    <!------------------------------------------------------------------------->
+    <!-------------------------------- HEADER --------------------------------->
+    <!------------------------------------------------------------------------->
+    <header class="header">
+      <a href="./index.html" class="header-icon" >
+        <i class="header-icon fa-solid fa-arrow-left fa-lg"></i>
+      </a>
+      <div class="logo">
+        <img src="./assets/logo/ohmyfood.png" alt="Logo Ohmyfood" />
+      </div>
+    </header>
+
+    <!------------------------------------------------------------------------->
+    <!--------------------------------- MENU ---------------------------------->
+    <!------------------------------------------------------------------------->
+
+    <div class="restaurant-header__image restaurant-header__image_4"></div>
+    <div class="restaurant-container">
+      <div class="menu">
+        <div class="menu-title">
+          <h1 class="menu__title">Le délice des sens</h1>
+          <button class="restaurant-card__like-btn">
+            <i class="fa-regular fa-heart restaurant-card__like"></i>
+            <!-- <i class="fa-solid fa-heart restaurant-card__like_active"></i> -->
+          </button>
+        </div>
+        <section class="menu-section">
+          <h2>ENTRÉES</h2>
+          <div class="restaurant-card menu-section-card">
+            <h3>Ravioles de foie gras </h3>
+            <div class="menu-section-card__text">
+              <p>Accompagnés de leur crème à la truffe</p>
+              <span><strong>25€</strong></span>
+              <!--FIXME span ou p?-->
+            </div>
+          </div>
+          <div class="restaurant-card menu-section-card">
+            <h3>Caviar osciètre </h3>
+            <div class="menu-section-card__text">
+              <p>Sur blini à la farine de blé noir</p>
+              <span><strong>35€</strong></span>
+            </div>
+          </div>
+          <div class="restaurant-card menu-section-card">
+            <h3>Homard et espuma de potiron</h3>
+            <div class="menu-section-card__text">
+              <p>Mariné aux zestes d'orange</p>
+              <span> <strong>20€</strong></span>
+            </div>
+          </div>
+          <div class="restaurant-card menu-section-card">
+            <h3>HFoie gras de canard cuit entier</h3>
+            <div class="menu-section-card__text">
+              <p>Confiture de figue et pain toasté</p>
+              <span> <strong>35€</strong></span>
+            </div>
+          </div>
+        </section>
+        <section class="menu-section">
+          <h2>PLATS</h2>
+          <div class="restaurant-card menu-section-card">
+            <h3>Noix de coquilles Saint-Jacques</h3>
+            <div class="menu-section-card__text">
+              <p>Sur lit de purée de céleri-rave</p>
+              <span> <strong>40€</strong></span>
+            </div>
+          </div>
+          <div class="restaurant-card menu-section-card">
+            <h3>
+              Langoustine poêlée</h3>
+            <div class="menu-section-card__text">
+              <p>Purée de patate douce</p>
+              <span> <strong>35€</strong></span>
+            </div>
+          </div>
+          <div class="restaurant-card menu-section-card">
+            <h3>Mijoté de queue de boeuf </h3>
+            <div class="menu-section-card__text">
+              <p>Et riz sauvage aux zestes de citron</p>
+              <span> <strong>44€</strong></span>
+            </div>
+          </div>
+        </section>
+        <section class="menu-section">
+          <h2>DESSERTS</h2>
+          <div class="restaurant-card menu-section-card">
+            <h3>Macaron noisette et chocolat</h3>
+            <div class="menu-section-card__text">
+              <p>Glace au caramel brun et sel de Guérande</p>
+              <span> <strong>18€</strong></span>
+            </div>
+          </div>
+          <div class="restaurant-card menu-section-card">
+            <h3>Baba au rhum revisité </h3>
+            <div class="menu-section-card__text">
+              <p>Avec son coulis de citron</p>
+              <span> <strong>22€</strong></span>
+            </div>
+          </div>
+          <div class="restaurant-card menu-section-card">
+            <h3>Tarte au citron meringuée </h3>
+            <div class="menu-section-card__text">
+              <p>Déstructurée</p>
+              <span> <strong>23€</strong></span>
+            </div>
+          </div>
+        </section>
+        <button class="btn description__btn btn_command">Commander</button>
+        <!--FIXME modifier classes-->
+      </div>
+
+      <!------------------------------------------------------------------------->
+      <!-------------------------------- FOOTER --------------------------------->
+      <!------------------------------------------------------------------------->
+
+      <footer class="footer">
+        <h3 class="footer__title">ohmyfood</h3>
+        <nav class="footer__nav">
+          <ul>
+            <li>
+              <a href="#" class="footer__link">
+                <i class="fa-solid fa-utensils footer__link-icon"></i>
+                <p><strong>Proposer un restaurant</strong></p>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">
+                <i class="fa-solid fa-handshake-angle footer__link-icon"></i>
+                <p><strong>Devenir partenaire</strong></p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <p>Mentions légales</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <p>Contact</p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+  </body>
+</html>

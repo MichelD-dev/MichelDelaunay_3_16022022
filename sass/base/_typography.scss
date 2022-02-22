@@ -1,9 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap');
+@use './fonts' as *;
 
-$heading-font-family: 'Montserrat', sans-serif;
-$body-font-family: 'Open Sans', sans-serif;
-$base-font-size: 18px;
-$base-font-weight: 400;
+// $heading-font-family: 'Montserrat', sans-serif;
 
-$normal: 400;
-$bold: 700;
+
+// $normal: 400;
+// $bold: 700;
+
+// $base-font {
+//   family: "Open Sans", sans-serif;
+//   size: 18px;
+//   weight: $normal;
+// }
