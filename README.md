@@ -4,6 +4,6 @@
 
 ### Formation OpenClassrooms - Projet 3
 
-#### Site mis en ligne sur Github Pages.
+#### Déploiement sur Github Pages:
 
 https://micheld-dev.github.io/MichelDelaunay_3_16022022/
