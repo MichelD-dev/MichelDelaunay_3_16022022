@@ -104,6 +104,26 @@ a {
 .restaurant-card__like {
   font-size: 27px;
   margin-top: 2px;
+  position: relative;
+  z-index: 1;
+}
+.restaurant-card__like:hover:after {
+  opacity: 1;
+}
+.restaurant-card__like::after {
+  content: "";
+  background: red;
+  color: red;
+  font-size: 27px;
+  margin-top: 2px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 250ms;
 }
 .restaurant-card__like_active {
   font-size: 27px;
@@ -423,16 +443,52 @@ a {
   overflow: hidden;
   padding: 0 0 0 12px;
   cursor: pointer;
-  animation-fill-mode: backwards;
+  transition: transform 0.1s ease-out;
+}
+.menu-section-card:active {
+  transform: scale(0.98);
+  box-shadow: 2px 3px 5px #ddd;
+}
+
+.menu-section__item {
   animation: 1s ease-out fadingSlideFromBottom;
-}
-.menu-section-card:nth-child(3) {
   animation-fill-mode: backwards;
-  animation-delay: 0.2s;
 }
-.menu-section-card:nth-child(4) {
-  animation-fill-mode: backwards;
+.menu-section__item_1 {
+  animation-delay: 0.08s;
+}
+.menu-section__item_2 {
+  animation-delay: 0.16s;
+}
+.menu-section__item_3 {
+  animation-delay: 0.24s;
+}
+.menu-section__item_4 {
+  animation-delay: 0.32s;
+}
+.menu-section__item_5 {
   animation-delay: 0.4s;
+}
+.menu-section__item_6 {
+  animation-delay: 0.48s;
+}
+.menu-section__item_7 {
+  animation-delay: 0.56s;
+}
+.menu-section__item_8 {
+  animation-delay: 0.64s;
+}
+.menu-section__item_9 {
+  animation-delay: 0.72s;
+}
+.menu-section__item_10 {
+  animation-delay: 0.8s;
+}
+.menu-section__item_11 {
+  animation-delay: 0.88s;
+}
+.menu-section__item_12 {
+  animation-delay: 0.96s;
 }
 
 .menu-section-card__subtitle {
