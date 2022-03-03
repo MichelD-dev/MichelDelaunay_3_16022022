@@ -18,6 +18,8 @@
   </head>
 
   <body>
+    <div class="loader"></div>
+
     <!------------------------------------------------------------------------->
     <!-------------------------------- HEADER --------------------------------->
     <!------------------------------------------------------------------------->
@@ -34,12 +36,12 @@
     <div class="scroller">
       <div class="container">
         <div class="location">
-          <i class="fa-solid fa-location-dot"></i>
+          <i class="fa-solid fa-location-dot item item_1"></i>
           <input
             type="search"
             name="location"
             placeholder="Paris, Belleville"
-            class="location__input"
+            class="location__input item item_1"
           />
           <!-- <p>Paris, Belleville</p> -->
         </div>
@@ -49,11 +51,13 @@
         <!------------------------------------------------------------------------->
 
         <section class="description">
-          <h1 class="description__title">Réservez le menu qui vous convient</h1>
-          <p class="description__text">
+          <h1 class="description__title item item_2">
+            Réservez le menu qui vous convient
+          </h1>
+          <p class="description__text item item_3">
             Découvrez des restaurants d'exception, selectionnés par nos soins.
           </p>
-          <button class="btn description__btn">
+          <button class="btn description__btn item item_4">
             <p>Explorer nos restaurants</p>
           </button>
         </section>
@@ -63,8 +67,8 @@
         <!------------------------------------------------------------------------->
 
         <section class="how-it-works">
-          <h2 class="how-it-works__title">Fonctionnement</h2>
-          <button class="btn how-it-works__btn">
+          <h2 class="how-it-works__title item item_5">Fonctionnement</h2>
+          <button class="btn how-it-works__btn item item_6">
             <div class="how-it-works__step">
               <span>1</span>
             </div>
@@ -73,14 +77,14 @@
             ></i>
             <p>Choisissez un restaurant</p>
           </button>
-          <button class="btn how-it-works__btn">
+          <button class="btn how-it-works__btn item item_7">
             <div class="how-it-works__step">
               <span>2</span>
             </div>
             <i class="fa-solid fa-list fa-xl how-it-works__btn-icon"></i>
             <p>Composez votre menu</p>
           </button>
-          <button class="btn how-it-works__btn how-it-works__btn">
+          <button class="btn how-it-works__btn how-it-works__btn item item_8">
             <div class="how-it-works__step">
               <span>3</span>
             </div>
@@ -94,8 +98,8 @@
         <!------------------------------------------------------------------------->
 
         <section class="restaurants">
-          <h2 class="restaurants__title">Restaurants</h2>
-          <div class="restaurant-card">
+          <h2 class="restaurants__title item item_9">Restaurants</h2>
+          <div class="restaurant-card item item_10">
             <div class="restaurant-card__new">
               <p>Nouveau</p>
             </div>
@@ -113,13 +117,17 @@
                   <p>Ménilmontant</p>
                 </div>
                 <button class="restaurant-card__like-btn">
-                  <i class="fa-regular fa-heart restaurant-card__like"></i>
-                  <!-- <i class="fa-solid fa-heart restaurant-card__like_active"></i> -->
+                  <div class="restaurant-card__like">
+                    <i class="fa-regular fa-heart"></i>
+                    <div class="restaurant-card__like_active">
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                  </div>
                 </button>
               </figcaption>
             </figure>
           </div>
-          <div class="restaurant-card">
+          <div class="restaurant-card item item_11">
             <div class="restaurant-card__new">
               <p>Nouveau</p>
             </div>
@@ -137,13 +145,17 @@
                   <p>Charonne</p>
                 </div>
                 <button class="restaurant-card__like-btn">
-                  <i class="fa-regular fa-heart restaurant-card__like"></i>
-                  <!-- <i class="fa-solid fa-heart restaurant-card__like_active"></i> -->
+                  <div class="restaurant-card__like">
+                    <i class="fa-regular fa-heart"></i>
+                    <div class="restaurant-card__like_active">
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                  </div>
                 </button>
               </figcaption>
             </figure>
           </div>
-          <div class="restaurant-card">
+          <div class="restaurant-card item item_12">
             <figure>
               <a href="./a-la-francaise.html">
                 <img
@@ -158,13 +170,17 @@
                   <p>Cité rouge</p>
                 </div>
                 <button class="restaurant-card__like-btn">
-                  <i class="fa-regular fa-heart restaurant-card__like"></i>
-                  <!-- <i class="fa-solid fa-heart restaurant-card__like_active"></i> -->
+                  <div class="restaurant-card__like">
+                    <i class="fa-regular fa-heart"></i>
+                    <div class="restaurant-card__like_active">
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                  </div>
                 </button>
               </figcaption>
             </figure>
           </div>
-          <div class="restaurant-card">
+          <div class="restaurant-card item item_13">
             <figure>
               <a href="le-delice-des-sens.html">
                 <img
@@ -179,8 +195,12 @@
                   <p>Folie-Méricourt</p>
                 </div>
                 <button class="restaurant-card__like-btn">
-                  <i class="fa-regular fa-heart restaurant-card__like"></i>
-                  <!-- <i class="fa-solid fa-heart restaurant-card__like_active"></i> -->
+                  <div class="restaurant-card__like">
+                    <i class="fa-regular fa-heart"></i>
+                    <div class="restaurant-card__like_active">
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                  </div>
                 </button>
               </figcaption>
             </figure>
