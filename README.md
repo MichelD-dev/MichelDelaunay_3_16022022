@@ -2,7 +2,7 @@
 
 ### Site de commande en ligne de menus gastronomiques
 
-### Formation OpenClassrooms - Projet 3
+### Formation OpenClassrooms Développeur d'applications JavaScript React - Projet 3
 
 #### Déploiement sur Github Pages:
 
