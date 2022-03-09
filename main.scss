@@ -3,39 +3,6 @@
 @use 'sass/pages/home';
 @use "sass/pages/restaurant";
 
-// body,
-// html {
-//   box-sizing: border-box;
-//   font-size: 18px;
-// }
-
-// h1 {
-//   font-family: $font-family-cursive;
-// }
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-h1 {
-  font-size: 40px;
-}
-
-h1,
-h2,
-h3,
-p,
-figure {
-  margin: 0;
-}
-
 // .scroller {
 //   height: 100vh;
 

@@ -1,0 +1,83 @@
+@use '../utils/variables' as *;
+
+.container {
+  margin-top: 85px;
+}
+
+@keyframes fadingSlideFromBottom {
+  0% {
+    transform: translateY(90px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@media only screen and (min-width: $desktop-breakpoint) {
+  .container {
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+  }
+}
+
+// .item {
+//   animation: 1s ease-out fadingSlideFromBottom;
+//   animation-fill-mode: backwards;
+//   @for $i from 1 through 13 {
+//     &_#{$i} {//FIXME plutôt des nth-child()
+//       // animation-delay: #{$i * 0.08 + 4.5}s;
+//       animation-delay: #{$i * 0.08}s;
+//     }
+//   }
+//   @for $i from 14 through 27 {
+//     &_#{$i} {
+//       animation-delay: #{($i - 13) * 0.08}s;
+//     }
+//   }
+// }
+.container {
+  @for $i from 1 through 4 {
+    & > *:nth-child(#{$i}) {
+      animation: 1s ease-out fadingSlideFromBottom;
+      animation-fill-mode: backwards;
+      // animation-delay: #{$i * .08}s;
+      animation-delay: #{$i * 0.5 + 2.5}s;
+    }
+    @for $i from 1 through 5 {
+      & > *:nth-child(#{$i}):not(p, input, svg) {
+        animation: 1s ease-out fadingSlideFromBottom;
+        animation-fill-mode: backwards;
+        // animation-delay: #{$i * .08}s;
+        animation-delay: #{$i * 0.5}s;
+      }
+    }
+  }
+}
+//FIXME pas d'increment sur les cartes restau ?
+//FIXME classe générique fadeIn
+
+.restaurant-container > .menu {
+  @for $i from 1 through 5 {
+    & > *:nth-child(#{$i}):not(p, input, svg) {
+      animation: 1s ease-out fadingSlideFromBottom;
+      animation-fill-mode: backwards;
+      // animation-delay: #{$i * .08}s;
+      animation-delay: #{$i * 0.5}s;
+    }
+    @for $i from 1 through 5 {
+      & > *:nth-child(#{$i}):not(p, input, svg) {
+        animation: 1s ease-out fadingSlideFromBottom;
+        animation-fill-mode: backwards;
+        // animation-delay: #{$i * .08}s;
+        animation-delay: #{$i * 0.5}s;
+      }
+    }
+  }
+}

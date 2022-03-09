@@ -1,0 +1,63 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+@use '../base/typography' as *;
+@use '../base/helpers' as *;
+
+@use 'sass:color';
+
+.description {
+  @include flex($direction: column);
+  background-color: color.scale($quaternary-color, $lightness: 95%);
+  padding: 40px 40px 70px;
+  gap: 15px;
+  text-align: center;
+  &__title {
+    font-size: $fs1 * 1.5;
+  }
+  &__text {
+    font-weight: $light;
+    font-size: $fs1 * 1.1;
+  }
+  &__btn {
+    padding: 16px 50px;
+    border-radius: 50px;
+    margin-top: 20px;
+    background-image: linear-gradient(165deg, $secondary-color, $primary-color);
+    background-size: 500%;
+    box-shadow: 3px 5px 10px #ddd;
+    transition: all 0.15s ease-out;
+    color: white;
+    background-position: center;
+    &:hover {
+      background-position: right top;
+      background-image: linear-gradient(
+        305deg,
+        color.scale($secondary-color, $lightness: 10%),
+        color.scale($primary-color, $lightness: 10%)
+      );
+      box-shadow: 5px 5px 15px #ccc;
+    }
+    &:active {
+      transform: scale(0.96);
+      box-shadow: 2px 3px 5px #ddd;
+      background-position: left bottom;
+    }
+  }
+}
+
+@media only screen and (min-width: $desktop-breakpoint) {
+  .description {
+    position: absolute;
+    top: 150px;
+    background-color: transparent;
+    border-radius: 40px;
+    gap: 30px;
+    padding-top: 70px;
+    &__title {
+      font-size: $fs1 * 2;
+      font-weight: $light;
+      font-family: $font-family-cursive;
+      color: #333;
+    }
+  }
+}

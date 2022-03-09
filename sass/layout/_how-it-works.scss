@@ -1,0 +1,105 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+@use '../base/typography' as *;
+
+@use 'sass:color';
+
+.how-it-works {
+  @include flex($direction: column);
+  gap: 30px;
+  padding: 50px 30px 80px;
+  &__title {
+    align-self: start;
+    font-size: $fs1 * 1.5;
+  }
+  &__btn {
+    @include flex($justify-content: flex-start);
+    width: 100%;
+    position: relative;
+    padding: 30px 0;
+    margin-left: 30px;
+    font-weight: $bold;
+    z-index: 1;
+    transition: transform 0.15s ease-out;
+    &-icon {
+      padding-left: 10%;
+      padding-right: 8%;
+      color: #666;
+    }
+    &:hover {
+      &::after {
+        opacity: 0.2;
+      }
+    }
+    &:hover &-icon {
+      color: $primary-color;
+    }
+    &:active {
+      transform: scale(0.96);
+      box-shadow: 2px 3px 5px #ddd;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border-radius: 25px;
+      background-color: $primary-color;
+      opacity: 0;
+      z-index: -1;
+      transition: opacity 650ms;
+    }
+  }
+  &__step {
+    @include flex();
+    position: absolute;
+    left: -15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: white;
+    background-color: $primary-color;
+  }
+}
+
+@media only screen and (min-width: $desktop-breakpoint) {
+  .how-it-works {
+    background-color: whitesmoke;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    &__title {
+      width: 90%;
+      text-align: center;
+      margin-bottom: 50px;
+      font-size: $fs1 * 2;
+      font-weight: $light;
+      font-family: $font-family-cursive;
+    }
+    &__btn {
+      width: 25%;
+      height: 300px;
+      font-size: $fs1 * 1.3;
+      flex-direction: column-reverse;
+      justify-content: center;
+      gap: 50px;
+      padding: 40px 20px;
+      & p {
+        font-weight: $light;
+        font-family: $font-family-cursive;
+        color: #333;
+      }
+    }
+    &__btn-icon {
+      font-size: 2rem;
+    }
+    &__step {
+      width: 40px;
+      height: 40px;
+      top: -23px;
+      left: -23px;
+    }
+  }
+}
