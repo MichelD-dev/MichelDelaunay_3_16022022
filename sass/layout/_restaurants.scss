@@ -1,0 +1,32 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+@use '../base/typography' as *;
+
+@use 'sass:color';
+
+.restaurants {
+  background-color: color.scale($quaternary-color, $lightness: 96%);
+  @include flex($direction: column);
+  gap: 20px;
+  padding: 50px 30px 80px;
+  &__title {
+    align-self: start;
+    font-size: $fs1 * 1.5;
+  }
+}
+
+@media only screen and (min-width: $desktop-breakpoint) {
+  .restaurants {
+    width: 100%;
+    gap: 55px;
+    margin-bottom: 50px;
+    &__title {
+      width: 100%;
+      text-align: center;
+      padding-bottom: 30px;
+      font-size: $fs1 * 2;
+      font-weight: $light;
+      font-family: $font-family-cursive;
+    }
+  }
+}
