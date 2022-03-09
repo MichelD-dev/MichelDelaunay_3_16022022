@@ -225,25 +225,15 @@
     animation: price-bounce 0.75s ease-out;
     animation-fill-mode: forwards;
   }
-  // input[type='checkbox']:checked ~ * {
-    // animation: none;
-    // transform: translateX(20px);
-  // }
-
-  // &:checked ~ .menu-section-card__text {
-  //   width: calc(100% - 95px);
-  // }
 }
 
 input[type='checkbox'] {
   display: none;
   &:checked ~ .menu-section-card__check {
     transform: translateX(20px);
-    animation: none;
+    // animation: none;
     & > .menu-section-card__check-icon {
-      //FIXME icone bouge si transform: none
-      transform: rotate(0deg);
-      // transform: none;
+      transform: none;
     }
     & > .menu-section-card__price {
       transform: translateX(20px);

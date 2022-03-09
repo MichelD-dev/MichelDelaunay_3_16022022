@@ -11,3 +11,37 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+@mixin fadingSlideFromBottom(
+  $items-nbr-loop1,
+  $items-nbr-loop2,
+  $initial-delay: 0
+) {
+  @for $i from 1 through $items-nbr-loop1 {
+    & > *:nth-child(#{$i}) {
+      animation: 1s ease-out fadingSlideFromBottom;
+      animation-fill-mode: backwards;
+      animation-delay: #{$i * 0.5 + $initial-delay}s;
+      @for $i from 1 through $items-nbr-loop2 {
+        & > *:nth-child(#{$i}):not(p, input, svg) {
+          animation: 1s ease-out fadingSlideFromBottom;
+          animation-fill-mode: backwards;
+          animation-delay: #{$i * 0.5}s;
+        }
+      }
+    }
+  }
+}
+
+@keyframes fadingSlideFromBottom {
+  0% {
+    transform: translateY(90px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
