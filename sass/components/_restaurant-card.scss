@@ -1,0 +1,135 @@
+@use '../base/typography' as *;
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+
+@use 'sass:color';
+
+.restaurant-card {
+  background-color: white;
+  position: relative;
+  box-shadow: 3px 5px 10px #ddd;
+  border-radius: 15px;
+  width: 100%;
+  transition: transform 0.15s ease-out;
+  &:active {
+    transform: scale(0.98);
+    box-shadow: 2px 3px 5px #ddd;
+  }
+  &__new {
+    background-color: $tertiary-color;
+    color: color.adjust($tertiary-color, $blackness: 100%);
+    padding: 9px 15px;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    z-index: 10;
+    font-size: $fs1 * 0.9;
+    border-radius: 3px;
+    & figure {
+      overflow: hidden;
+    }
+  }
+  &__image {
+    width: 100%;
+    height: 215px;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+
+    &_1 {
+      object-position: center 100%;
+    }
+    &_2 {
+      object-position: center 61%;
+    }
+    &_3 {
+      object-position: center 100%;
+    }
+    &_4 {
+      object-position: center 100%;
+    }
+  }
+  &__title {
+    padding-bottom: 5px;
+    font-size: $fs1 * 1.1;
+  }
+  &__text {
+    @include flex($justify-content: space-between);
+    align-items: start;
+    width: 100%;
+    padding: 10px 30px 15px 15px;
+    & p {
+      color: #666;
+    }
+  }
+  &__like-btn + label {
+    cursor: pointer;
+  }
+  &__like-btn:hover + label,
+  &__like-btn:checked + label {
+    & .restaurant-card__like_active {
+      opacity: 1;
+    }
+  }
+  &__like {
+    color: #666;
+    font-size: $fs1 * 1.8;
+    position: relative;
+    z-index: 1;
+    //   } //FIXME  dégradé de couleur
+    //   //FIXME possible pas de scale sur like?
+    &_active {
+      // background-image: linear-gradient(
+      //   165deg,
+      //   $secondary-color,
+      //   $primary-color
+      // );
+      // background-clip: text;
+      // -webkit-background-clip: text;
+      // color: transparent;
+      color: $primary-color;
+      font-size: $fs1 * 1.8;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 15px;
+      z-index: 1;
+      opacity: 0;
+      transition: opacity 250ms;
+    }
+    &_menu {
+      margin-right: 20px;
+    }
+  }
+}
+
+@media only screen and (min-width: $desktop-breakpoint) {
+  .restaurant-card {
+    overflow: hidden;
+    width: 80%;
+    &__image {
+      height: 250px;
+      clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%);
+      width: 75%;
+    }
+    & figure {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+    &__title {
+      font-size: $fs1 * 1.4;
+      font-weight: $light;
+      font-family: $font-family-cursive;
+    }
+    &__text {
+      flex-direction: column;
+      width: 25%;
+      margin: 15px;
+    }
+    &__image {
+      border-radius: 0;
+      object-position: initial;
+    }
+  }
+}

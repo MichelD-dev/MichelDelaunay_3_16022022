@@ -1,0 +1,41 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+@use '../base/helpers' as *;
+
+@use 'sass:color';
+
+.location {
+  @include flex();
+  gap: 20px;
+  background-color: color.scale($quaternary-color, $lightness: 90%);
+  padding: 18px;
+  padding-left: 85px;
+  &__input {
+    font-weight: bold;
+    border: none;
+    outline: none;
+    background-color: inherit;
+  }
+  ::placeholder {
+    color: black;
+  }
+}
+
+@media only screen and (min-width: $desktop-breakpoint) {
+
+
+
+
+  .location {
+    width: 250px;
+    position: absolute;
+    top: 28px;
+    right: 60px;
+    padding: 5px;
+    border-radius: 20px;
+    z-index: 50;
+    &__input {
+      width: 150px;
+    }
+  }
+}

@@ -1,0 +1,77 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+@use '../base/typography' as *;
+
+.footer {
+  background-color: $quaternary-color;
+  color: white;
+  padding: 20px 30px 40px;
+  font-weight: $light;
+  &__title {
+    font-family: $font-family-cursive;
+    padding: 8px 0 20px;
+    font-size: $fs1 * 1.1;
+    font-weight: normal;
+  }
+  & li {
+    padding-bottom: 8px;
+  }
+  &__link {
+    @include flex($justify-content: flex-start);
+    gap: 10px;
+    &-icon {
+      width: 25px;
+      margin-left: -3px;
+      &_hidden {
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $desktop-breakpoint) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    &__title {
+      margin-bottom: 15px;
+      font-size: $fs1 * 1.3;
+    }
+    &__nav {
+      width: 50%;
+    }
+    &__nav ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+    }
+    &__nav ul li:nth-child(1) {
+      width: 30%;
+       }
+    &__nav ul li:nth-child(2) {
+      width: 30%;
+      text-align: center;
+    }
+    &__nav ul li:nth-child(4) {
+      width: 30%;
+      text-align: center;
+    }
+    &__nav ul li:nth-child(3) {
+      order: 4;
+      width: 100%;
+      padding-top: 10px;
+      text-align: center;
+    }
+    &__link {
+      justify-content: center;
+      &-icon_hidden {
+        display: inline-block;
+      }
+    }
+  }
+}
