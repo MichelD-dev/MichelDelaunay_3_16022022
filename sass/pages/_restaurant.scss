@@ -225,10 +225,10 @@
     animation: price-bounce 0.75s ease-out;
     animation-fill-mode: forwards;
   }
-  input[type='checkbox']:checked ~ * {
+  // input[type='checkbox']:checked ~ * {
     // animation: none;
     // transform: translateX(20px);
-  }
+  // }
 
   // &:checked ~ .menu-section-card__text {
   //   width: calc(100% - 95px);
