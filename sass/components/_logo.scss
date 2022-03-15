@@ -1,8 +1,6 @@
 @use '../utils/mixins' as *;
 
 .logo {
-  // margin: auto;
-  // @include flex;
   width: 200px;
   & img {
     width: 100%;

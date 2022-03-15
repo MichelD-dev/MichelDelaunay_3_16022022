@@ -16,6 +16,10 @@ html {
   font-size: 18px;
 }
 
+body {
+  margin: 0;
+}
+
 *,
 *::before,
 *::after {
@@ -48,342 +52,496 @@ figure {
   margin: 0;
 }
 
+.section {
+  width: 100%;
+}
+
 .container {
   margin-top: 85px;
 }
 .container > *:nth-child(1) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 0.5s;
+  animation-delay: 0.15s;
 }
 .container > *:nth-child(1) > *:nth-child(1):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 0.5s;
+  animation-delay: 0.15s;
 }
 .container > *:nth-child(1) > *:nth-child(2):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 1s;
+  animation-delay: 0.3s;
 }
 .container > *:nth-child(1) > *:nth-child(3):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 1.5s;
+  animation-delay: 0.45s;
 }
 .container > *:nth-child(1) > *:nth-child(4):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 2s;
+  animation-delay: 0.6s;
 }
 .container > *:nth-child(1) > *:nth-child(5):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 2.5s;
+  animation-delay: 0.75s;
 }
 .container > *:nth-child(2) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 1s;
+  animation-delay: 0.3s;
 }
 .container > *:nth-child(2) > *:nth-child(1):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 0.5s;
+  animation-delay: 0.15s;
 }
 .container > *:nth-child(2) > *:nth-child(2):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 1s;
+  animation-delay: 0.3s;
 }
 .container > *:nth-child(2) > *:nth-child(3):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 1.5s;
+  animation-delay: 0.45s;
 }
 .container > *:nth-child(2) > *:nth-child(4):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 2s;
+  animation-delay: 0.6s;
 }
 .container > *:nth-child(2) > *:nth-child(5):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 2.5s;
+  animation-delay: 0.75s;
 }
 .container > *:nth-child(3) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 1.5s;
+  animation-delay: 0.45s;
 }
 .container > *:nth-child(3) > *:nth-child(1):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 0.5s;
+  animation-delay: 0.15s;
 }
 .container > *:nth-child(3) > *:nth-child(2):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 1s;
+  animation-delay: 0.3s;
 }
 .container > *:nth-child(3) > *:nth-child(3):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 1.5s;
+  animation-delay: 0.45s;
 }
 .container > *:nth-child(3) > *:nth-child(4):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 2s;
+  animation-delay: 0.6s;
 }
 .container > *:nth-child(3) > *:nth-child(5):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 2.5s;
+  animation-delay: 0.75s;
 }
 .container > *:nth-child(4) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 2s;
+  animation-delay: 0.6s;
 }
 .container > *:nth-child(4) > *:nth-child(1):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 0.5s;
+  animation-delay: 0.15s;
 }
 .container > *:nth-child(4) > *:nth-child(2):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 1s;
+  animation-delay: 0.3s;
 }
 .container > *:nth-child(4) > *:nth-child(3):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 1.5s;
+  animation-delay: 0.45s;
 }
 .container > *:nth-child(4) > *:nth-child(4):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 2s;
+  animation-delay: 0.6s;
 }
 .container > *:nth-child(4) > *:nth-child(5):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 2.5s;
+  animation-delay: 0.75s;
+}
+.container > *:nth-child(1) {
+  animation: 1s ease-out fadingSlideFromBottom;
+  animation-fill-mode: backwards;
+  animation-delay: 0.15s;
+}
+.container > *:nth-child(1) > *:nth-child(1):not(p, input, svg) {
+  animation: 1s ease-out fadingSlideFromBottom;
+  animation-fill-mode: backwards;
+  animation-delay: 0.15s;
+}
+.container > *:nth-child(1) > *:nth-child(2):not(p, input, svg) {
+  animation: 1s ease-out fadingSlideFromBottom;
+  animation-fill-mode: backwards;
+  animation-delay: 0.3s;
+}
+.container > *:nth-child(1) > *:nth-child(3):not(p, input, svg) {
+  animation: 1s ease-out fadingSlideFromBottom;
+  animation-fill-mode: backwards;
+  animation-delay: 0.45s;
+}
+.container > *:nth-child(1) > *:nth-child(4):not(p, input, svg) {
+  animation: 1s ease-out fadingSlideFromBottom;
+  animation-fill-mode: backwards;
+  animation-delay: 0.6s;
+}
+.container > *:nth-child(1) > *:nth-child(5):not(p, input, svg) {
+  animation: 1s ease-out fadingSlideFromBottom;
+  animation-fill-mode: backwards;
+  animation-delay: 0.75s;
+}
+.container > *:nth-child(2) {
+  animation: 1s ease-out fadingSlideFromBottom;
+  animation-fill-mode: backwards;
+  animation-delay: 0.3s;
+}
+.container > *:nth-child(2) > *:nth-child(1):not(p, input, svg) {
+  animation: 1s ease-out fadingSlideFromBottom;
+  animation-fill-mode: backwards;
+  animation-delay: 0.15s;
+}
+.container > *:nth-child(2) > *:nth-child(2):not(p, input, svg) {
+  animation: 1s ease-out fadingSlideFromBottom;
+  animation-fill-mode: backwards;
+  animation-delay: 0.3s;
+}
+.container > *:nth-child(2) > *:nth-child(3):not(p, input, svg) {
+  animation: 1s ease-out fadingSlideFromBottom;
+  animation-fill-mode: backwards;
+  animation-delay: 0.45s;
+}
+.container > *:nth-child(2) > *:nth-child(4):not(p, input, svg) {
+  animation: 1s ease-out fadingSlideFromBottom;
+  animation-fill-mode: backwards;
+  animation-delay: 0.6s;
+}
+.container > *:nth-child(2) > *:nth-child(5):not(p, input, svg) {
+  animation: 1s ease-out fadingSlideFromBottom;
+  animation-fill-mode: backwards;
+  animation-delay: 0.75s;
+}
+.container > *:nth-child(3) {
+  animation: 1s ease-out fadingSlideFromBottom;
+  animation-fill-mode: backwards;
+  animation-delay: 0.45s;
+}
+.container > *:nth-child(3) > *:nth-child(1):not(p, input, svg) {
+  animation: 1s ease-out fadingSlideFromBottom;
+  animation-fill-mode: backwards;
+  animation-delay: 0.15s;
+}
+.container > *:nth-child(3) > *:nth-child(2):not(p, input, svg) {
+  animation: 1s ease-out fadingSlideFromBottom;
+  animation-fill-mode: backwards;
+  animation-delay: 0.3s;
+}
+.container > *:nth-child(3) > *:nth-child(3):not(p, input, svg) {
+  animation: 1s ease-out fadingSlideFromBottom;
+  animation-fill-mode: backwards;
+  animation-delay: 0.45s;
+}
+.container > *:nth-child(3) > *:nth-child(4):not(p, input, svg) {
+  animation: 1s ease-out fadingSlideFromBottom;
+  animation-fill-mode: backwards;
+  animation-delay: 0.6s;
+}
+.container > *:nth-child(3) > *:nth-child(5):not(p, input, svg) {
+  animation: 1s ease-out fadingSlideFromBottom;
+  animation-fill-mode: backwards;
+  animation-delay: 0.75s;
+}
+.container > *:nth-child(4) {
+  animation: 1s ease-out fadingSlideFromBottom;
+  animation-fill-mode: backwards;
+  animation-delay: 0.6s;
+}
+.container > *:nth-child(4) > *:nth-child(1):not(p, input, svg) {
+  animation: 1s ease-out fadingSlideFromBottom;
+  animation-fill-mode: backwards;
+  animation-delay: 0.15s;
+}
+.container > *:nth-child(4) > *:nth-child(2):not(p, input, svg) {
+  animation: 1s ease-out fadingSlideFromBottom;
+  animation-fill-mode: backwards;
+  animation-delay: 0.3s;
+}
+.container > *:nth-child(4) > *:nth-child(3):not(p, input, svg) {
+  animation: 1s ease-out fadingSlideFromBottom;
+  animation-fill-mode: backwards;
+  animation-delay: 0.45s;
+}
+.container > *:nth-child(4) > *:nth-child(4):not(p, input, svg) {
+  animation: 1s ease-out fadingSlideFromBottom;
+  animation-fill-mode: backwards;
+  animation-delay: 0.6s;
+}
+.container > *:nth-child(4) > *:nth-child(5):not(p, input, svg) {
+  animation: 1s ease-out fadingSlideFromBottom;
+  animation-fill-mode: backwards;
+  animation-delay: 0.75s;
 }
 
 .restaurant-container > .menu > *:nth-child(1) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 0.5s;
+  animation-delay: 0.15s;
 }
 .restaurant-container > .menu > *:nth-child(1) > *:nth-child(1):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 0.5s;
+  animation-delay: 0.15s;
 }
 .restaurant-container > .menu > *:nth-child(1) > *:nth-child(2):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 1s;
+  animation-delay: 0.3s;
 }
 .restaurant-container > .menu > *:nth-child(1) > *:nth-child(3):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 1.5s;
+  animation-delay: 0.45s;
 }
 .restaurant-container > .menu > *:nth-child(1) > *:nth-child(4):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 2s;
+  animation-delay: 0.6s;
 }
 .restaurant-container > .menu > *:nth-child(1) > *:nth-child(5):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 2.5s;
+  animation-delay: 0.75s;
 }
 .restaurant-container > .menu > *:nth-child(2) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 1s;
+  animation-delay: 0.3s;
 }
 .restaurant-container > .menu > *:nth-child(2) > *:nth-child(1):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 0.5s;
+  animation-delay: 0.15s;
 }
 .restaurant-container > .menu > *:nth-child(2) > *:nth-child(2):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 1s;
+  animation-delay: 0.3s;
 }
 .restaurant-container > .menu > *:nth-child(2) > *:nth-child(3):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 1.5s;
+  animation-delay: 0.45s;
 }
 .restaurant-container > .menu > *:nth-child(2) > *:nth-child(4):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 2s;
+  animation-delay: 0.6s;
 }
 .restaurant-container > .menu > *:nth-child(2) > *:nth-child(5):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 2.5s;
+  animation-delay: 0.75s;
 }
 .restaurant-container > .menu > *:nth-child(3) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 1.5s;
+  animation-delay: 0.45s;
 }
 .restaurant-container > .menu > *:nth-child(3) > *:nth-child(1):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 0.5s;
+  animation-delay: 0.15s;
 }
 .restaurant-container > .menu > *:nth-child(3) > *:nth-child(2):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 1s;
+  animation-delay: 0.3s;
 }
 .restaurant-container > .menu > *:nth-child(3) > *:nth-child(3):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 1.5s;
+  animation-delay: 0.45s;
 }
 .restaurant-container > .menu > *:nth-child(3) > *:nth-child(4):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 2s;
+  animation-delay: 0.6s;
 }
 .restaurant-container > .menu > *:nth-child(3) > *:nth-child(5):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 2.5s;
+  animation-delay: 0.75s;
 }
 .restaurant-container > .menu > *:nth-child(4) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 2s;
+  animation-delay: 0.6s;
 }
 .restaurant-container > .menu > *:nth-child(4) > *:nth-child(1):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 0.5s;
+  animation-delay: 0.15s;
 }
 .restaurant-container > .menu > *:nth-child(4) > *:nth-child(2):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 1s;
+  animation-delay: 0.3s;
 }
 .restaurant-container > .menu > *:nth-child(4) > *:nth-child(3):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 1.5s;
+  animation-delay: 0.45s;
 }
 .restaurant-container > .menu > *:nth-child(4) > *:nth-child(4):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 2s;
+  animation-delay: 0.6s;
 }
 .restaurant-container > .menu > *:nth-child(4) > *:nth-child(5):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 2.5s;
+  animation-delay: 0.75s;
 }
 .restaurant-container > .menu > *:nth-child(5) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 2.5s;
+  animation-delay: 0.75s;
 }
 .restaurant-container > .menu > *:nth-child(5) > *:nth-child(1):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 0.5s;
+  animation-delay: 0.15s;
 }
 .restaurant-container > .menu > *:nth-child(5) > *:nth-child(2):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 1s;
+  animation-delay: 0.3s;
 }
 .restaurant-container > .menu > *:nth-child(5) > *:nth-child(3):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 1.5s;
+  animation-delay: 0.45s;
 }
 .restaurant-container > .menu > *:nth-child(5) > *:nth-child(4):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 2s;
+  animation-delay: 0.6s;
 }
 .restaurant-container > .menu > *:nth-child(5) > *:nth-child(5):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 2.5s;
+  animation-delay: 0.75s;
 }
 .restaurant-container > .menu > *:nth-child(6) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 3s;
+  animation-delay: 0.9s;
 }
 .restaurant-container > .menu > *:nth-child(6) > *:nth-child(1):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 0.5s;
+  animation-delay: 0.15s;
 }
 .restaurant-container > .menu > *:nth-child(6) > *:nth-child(2):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 1s;
+  animation-delay: 0.3s;
 }
 .restaurant-container > .menu > *:nth-child(6) > *:nth-child(3):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 1.5s;
+  animation-delay: 0.45s;
 }
 .restaurant-container > .menu > *:nth-child(6) > *:nth-child(4):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 2s;
+  animation-delay: 0.6s;
 }
 .restaurant-container > .menu > *:nth-child(6) > *:nth-child(5):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 2.5s;
+  animation-delay: 0.75s;
 }
 .restaurant-container > .menu > *:nth-child(7) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 3.5s;
+  animation-delay: 1.05s;
 }
 .restaurant-container > .menu > *:nth-child(7) > *:nth-child(1):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 0.5s;
+  animation-delay: 0.15s;
 }
 .restaurant-container > .menu > *:nth-child(7) > *:nth-child(2):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 1s;
+  animation-delay: 0.3s;
 }
 .restaurant-container > .menu > *:nth-child(7) > *:nth-child(3):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 1.5s;
+  animation-delay: 0.45s;
 }
 .restaurant-container > .menu > *:nth-child(7) > *:nth-child(4):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 2s;
+  animation-delay: 0.6s;
 }
 .restaurant-container > .menu > *:nth-child(7) > *:nth-child(5):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 2.5s;
+  animation-delay: 0.75s;
+}
+.restaurant-container > .menu > *:nth-child(8) {
+  animation: 1s ease-out fadingSlideFromBottom;
+  animation-fill-mode: backwards;
+  animation-delay: 1.2s;
+}
+.restaurant-container > .menu > *:nth-child(8) > *:nth-child(1):not(p, input, svg) {
+  animation: 1s ease-out fadingSlideFromBottom;
+  animation-fill-mode: backwards;
+  animation-delay: 0.15s;
+}
+.restaurant-container > .menu > *:nth-child(8) > *:nth-child(2):not(p, input, svg) {
+  animation: 1s ease-out fadingSlideFromBottom;
+  animation-fill-mode: backwards;
+  animation-delay: 0.3s;
+}
+.restaurant-container > .menu > *:nth-child(8) > *:nth-child(3):not(p, input, svg) {
+  animation: 1s ease-out fadingSlideFromBottom;
+  animation-fill-mode: backwards;
+  animation-delay: 0.45s;
+}
+.restaurant-container > .menu > *:nth-child(8) > *:nth-child(4):not(p, input, svg) {
+  animation: 1s ease-out fadingSlideFromBottom;
+  animation-fill-mode: backwards;
+  animation-delay: 0.6s;
+}
+.restaurant-container > .menu > *:nth-child(8) > *:nth-child(5):not(p, input, svg) {
+  animation: 1s ease-out fadingSlideFromBottom;
+  animation-fill-mode: backwards;
+  animation-delay: 0.75s;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   .container {
     max-width: 1440px;
     margin: auto;
@@ -391,140 +549,6 @@ figure {
     flex-direction: column;
     align-items: center;
     gap: 80px;
-  }
-}
-.logo {
-  width: 200px;
-}
-.logo img {
-  width: 100%;
-}
-
-.btn {
-  box-shadow: 3px 5px 10px #ddd;
-  padding: 16px 25px;
-  border-radius: 25px;
-  background-color: #f9f9f9;
-  border: none;
-  cursor: pointer;
-}
-
-.restaurant-card {
-  background-color: white;
-  position: relative;
-  box-shadow: 3px 5px 10px #ddd;
-  border-radius: 15px;
-  width: 100%;
-  transition: transform 0.15s ease-out;
-}
-.restaurant-card:active {
-  transform: scale(0.98);
-  box-shadow: 2px 3px 5px #ddd;
-}
-.restaurant-card__new {
-  background-color: #99e2d0;
-  color: #606060;
-  padding: 9px 15px;
-  position: absolute;
-  top: 20px;
-  right: 15px;
-  z-index: 10;
-  font-size: 16.2px;
-  border-radius: 3px;
-}
-.restaurant-card__new figure {
-  overflow: hidden;
-}
-.restaurant-card__image {
-  width: 100%;
-  height: 215px;
-  border-radius: 15px 15px 0 0;
-  object-fit: cover;
-}
-.restaurant-card__image_1 {
-  object-position: center 100%;
-}
-.restaurant-card__image_2 {
-  object-position: center 61%;
-}
-.restaurant-card__image_3 {
-  object-position: center 100%;
-}
-.restaurant-card__image_4 {
-  object-position: center 100%;
-}
-.restaurant-card__title {
-  padding-bottom: 5px;
-  font-size: 19.8px;
-}
-.restaurant-card__text {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  align-items: start;
-  width: 100%;
-  padding: 10px 30px 15px 15px;
-}
-.restaurant-card__text p {
-  color: #666;
-}
-.restaurant-card__like-btn + label {
-  cursor: pointer;
-}
-.restaurant-card__like-btn:hover + label .restaurant-card__like_active, .restaurant-card__like-btn:checked + label .restaurant-card__like_active {
-  opacity: 1;
-}
-.restaurant-card__like {
-  color: #666;
-  font-size: 32.4px;
-  position: relative;
-  z-index: 1;
-}
-.restaurant-card__like_active {
-  color: #9356dc;
-  font-size: 32.4px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 15px;
-  z-index: 1;
-  opacity: 0;
-  transition: opacity 250ms;
-}
-.restaurant-card__like_menu {
-  margin-right: 20px;
-}
-
-@media only screen and (min-width: 768px) {
-  .restaurant-card {
-    overflow: hidden;
-    width: 80%;
-  }
-  .restaurant-card__image {
-    height: 250px;
-    clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%);
-    width: 75%;
-  }
-  .restaurant-card figure {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-  }
-  .restaurant-card__title {
-    font-size: 25.2px;
-    font-weight: 300;
-    font-family: "Shrikhand", cursive;
-  }
-  .restaurant-card__text {
-    flex-direction: column;
-    width: 25%;
-    margin: 15px;
-  }
-  .restaurant-card__image {
-    border-radius: 0;
-    object-position: initial;
   }
 }
 .loader {
@@ -747,7 +771,7 @@ figure {
   font-size: 19.8px;
 }
 .description__btn {
-  padding: 16px 50px;
+  padding: 16px 25px;
   border-radius: 50px;
   margin-top: 20px;
   background-image: linear-gradient(165deg, #ff79da, #9356dc);
@@ -961,7 +985,7 @@ figure {
     font-size: 23.4px;
   }
   .footer__nav {
-    width: 50%;
+    width: 80%;
   }
   .footer__nav ul {
     display: flex;
@@ -993,6 +1017,149 @@ figure {
   }
   .footer__link-icon_hidden {
     display: inline-block;
+  }
+}
+.logo {
+  width: 200px;
+}
+.logo img {
+  width: 100%;
+}
+
+.btn {
+  box-shadow: 3px 5px 10px #ddd;
+  border-radius: 25px;
+  background-color: #f9f9f9;
+  border: none;
+  cursor: pointer;
+}
+
+.restaurant-card {
+  background-color: white;
+  position: relative;
+  box-shadow: 3px 5px 10px #ddd;
+  border-radius: 15px;
+  width: 100%;
+  transition: transform 0.15s ease-out;
+}
+.restaurant-card:active {
+  transform: scale(0.98);
+  box-shadow: 2px 3px 5px #ddd;
+}
+.restaurant-card__new {
+  background-color: #99e2d0;
+  color: #606060;
+  padding: 9px 15px;
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  z-index: 10;
+  font-size: 16.2px;
+  border-radius: 3px;
+}
+.restaurant-card__new figure {
+  overflow: hidden;
+}
+.restaurant-card__image {
+  width: 100%;
+  height: 215px;
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+}
+.restaurant-card__image_1 {
+  object-position: center 100%;
+}
+.restaurant-card__image_2 {
+  object-position: center 61%;
+}
+.restaurant-card__image_3 {
+  object-position: center 100%;
+}
+.restaurant-card__image_4 {
+  object-position: center 100%;
+}
+.restaurant-card__title {
+  padding-bottom: 5px;
+  font-size: 19.8px;
+}
+.restaurant-card__text {
+  width: 100%;
+  padding: 10px 30px 15px 15px;
+}
+.restaurant-card__text p {
+  color: #666;
+}
+.restaurant-card__like-btn:checked + label > .restaurant-card__like_inactive {
+  opacity: 0;
+}
+.restaurant-card__like-btn:checked + label > .restaurant-card__like_active {
+  opacity: 1;
+}
+.restaurant-card__like {
+  font-size: 32.4px;
+}
+.restaurant-card__like label {
+  cursor: pointer;
+}
+.restaurant-card__like_inactive {
+  color: #666;
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  opacity: 1;
+  transition: opacity 250ms;
+}
+.restaurant-card__like_active {
+  color: #9356dc;
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  opacity: 0;
+  transition: opacity 250ms;
+}
+
+@media only screen and (min-width: 768px) {
+  .restaurant-card {
+    overflow: hidden;
+  }
+  .restaurant-card__image {
+    height: 250px;
+    clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%);
+    width: 75%;
+  }
+  .restaurant-card figure {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .restaurant-card__title {
+    font-size: 25.2px;
+    font-weight: 300;
+    font-family: "Shrikhand", cursive;
+  }
+  .restaurant-card__text {
+    flex-direction: column;
+    width: 25%;
+    margin: 15px;
+  }
+  .restaurant-card__image {
+    border-radius: 0;
+    object-position: initial;
+  }
+  .restaurant-card__like_inactive {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+  }
+  .restaurant-card__like_active {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .restaurant-card {
+    width: 80%;
   }
 }
 .restaurant-header {
@@ -1038,41 +1205,36 @@ figure {
   background-image: url("../../assets/images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
 }
 
-.restaurant-container {
-  position: relative;
-  margin-top: -50px;
-  border-radius: 50px 50px 0 0;
-  background-color: whitesmoke;
+@media only screen and (min-width: 768px) {
+  .restaurant-header {
+    background-color: transparent;
+    box-shadow: none;
+    position: initial;
+    padding: 0;
+  }
+  .restaurant-header__image {
+    margin-top: 0;
+    height: 400px;
+  }
+  .restaurant-header__logo {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 250px;
+    background-color: white;
+    padding: 13px 38px 10px 60px;
+    border-radius: 25px;
+  }
+  .restaurant-header__logo-icon {
+    font-size: 19.8px;
+    z-index: 1;
+    position: absolute;
+    left: 49px;
+    top: 42px;
+    padding: 15px;
+    cursor: pointer;
+  }
 }
-
-.restaurant__like {
-  cursor: pointer;
-  color: #666;
-  font-size: 32.4px;
-  position: relative;
-  z-index: 1;
-}
-.restaurant__like_active {
-  color: #9356dc;
-  font-size: 32.4px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 15px;
-  z-index: 1;
-  opacity: 0;
-  transition: opacity 250ms;
-}
-.restaurant__like-btn:checked + label .restaurant__like_active {
-  opacity: 1;
-}
-.restaurant__like-label {
-  position: absolute;
-  top: 35px;
-  right: 50px;
-}
-
 .menu {
   width: 100%;
   display: flex;
@@ -1082,6 +1244,7 @@ figure {
   padding: 40px 30px 0;
   gap: 20px;
   padding-bottom: 80px;
+  position: relative;
 }
 .menu-title {
   display: flex;
@@ -1095,6 +1258,30 @@ figure {
   font-family: "Shrikhand", cursive;
   font-size: 32.4px;
   font-weight: normal;
+}
+.menu__like {
+  cursor: pointer;
+  color: #666;
+  font-size: 32.4px;
+  position: relative;
+}
+.menu__like_active {
+  color: #9356dc;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 15px;
+  opacity: 0;
+  transition: opacity 250ms;
+}
+.menu__like-btn:checked + label .menu__like_active {
+  opacity: 1;
+}
+.menu__like-label {
+  position: absolute;
+  top: 40px;
+  right: 50px;
 }
 .menu-section {
   display: flex;
@@ -1138,7 +1325,80 @@ figure {
 .menu-section-card__price {
   font-weight: 400;
 }
+.menu__command-btn {
+  padding: 16px 50px;
+  border-radius: 50px;
+  margin-top: 20px;
+  background-image: linear-gradient(165deg, #ff79da, #9356dc);
+  background-size: 500%;
+  box-shadow: 3px 5px 10px #ddd;
+  transition: all 0.15s ease-out;
+  color: white;
+  background-position: center;
+}
+.menu__command-btn:hover {
+  background-position: right top;
+  background-image: linear-gradient(305deg, #ff86de, #9e67e0);
+  box-shadow: 5px 5px 15px #ccc;
+}
+.menu__command-btn:active {
+  transform: scale(0.96);
+  box-shadow: 2px 3px 5px #ddd;
+  background-position: left bottom;
+}
 
+@media only screen and (min-width: 768px) {
+  .menu {
+    position: relative;
+    gap: 30px;
+  }
+  .menu-title {
+    margin-top: 3%;
+    justify-content: center;
+  }
+  .menu__title {
+    font-size: 43.2px;
+  }
+  .menu__like-label {
+    position: absolute;
+    top: 35px;
+    right: 50px;
+  }
+  .menu__like-label :hover .menu__like_active {
+    opacity: 1;
+  }
+  .menu-section {
+    gap: 40px;
+    width: 90%;
+  }
+  .menu-section h2 {
+    margin: 40px auto 0px;
+    font-size: 21.6px;
+  }
+  .menu-section h2:after {
+    width: 100%;
+  }
+  .menu-section-card {
+    clip-path: polygon(12% 0, 100% 0, 100% 100%, 0 100%);
+    border-radius: 0;
+    margin: 0 -70px 0 -70px;
+  }
+  .menu-section-card__text {
+    padding-top: 0;
+    padding-left: 110px;
+    gap: 6px;
+  }
+  .menu-section-card__title {
+    font-family: "Shrikhand", cursive;
+    font-weight: normal;
+  }
+  .menu-section-card__subtitle {
+    padding-left: 25px;
+  }
+  .menu-section-card__price {
+    padding-bottom: 17px;
+  }
+}
 .menu-section-card {
   display: flex;
   flex-direction: row;
@@ -1207,21 +1467,18 @@ figure {
   padding-top: 50px;
   padding-right: 40px;
   font-weight: 700;
-  animation: price-bounce-reverse 0.8s ease-out;
 }
 .menu-section-card:hover .menu-section-card__text {
-  width: calc(100% - 95px);
+  width: calc(100% - 165px);
 }
 .menu-section-card:hover .menu-section-card__check {
-  animation: check-bounce 0.75s ease-in-out;
-  animation-fill-mode: forwards;
+  animation: check-bounce 0.75s ease-in-out forwards;
 }
 .menu-section-card:hover .menu-section-card__check > .menu-section-card__check-icon {
   transform: rotate(0deg);
 }
 .menu-section-card:hover .menu-section-card__price {
-  animation: price-bounce 0.75s ease-out;
-  animation-fill-mode: forwards;
+  animation: price-bounce 0.75s ease-out forwards;
 }
 
 input[type=checkbox] {
@@ -1270,111 +1527,6 @@ input[type=checkbox]:checked ~ .menu-section-card__check > .menu-section-card__p
   }
   100% {
     transform: translateX(20px);
-  }
-}
-@keyframes price-bounce-reverse {
-  0% {
-    transform: translateX(0);
-  }
-  45% {
-    transform: translateX(-5px);
-  }
-  55% {
-    transform: translateX(5px);
-  }
-  90% {
-    transform: translateX(0);
-  }
-}
-@media only screen and (min-width: 768px) {
-  .restaurant-header {
-    background-color: transparent;
-    box-shadow: none;
-    position: initial;
-    padding: 0;
-  }
-  .restaurant-header__image {
-    margin-top: 0;
-    height: 400px;
-  }
-  .restaurant-header__logo {
-    position: absolute;
-    top: 40px;
-    left: 40px;
-    width: 250px;
-    background-color: white;
-    padding: 13px 38px 10px 60px;
-    border-radius: 25px;
-  }
-  .restaurant-header__logo-icon {
-    font-size: 19.8px;
-    z-index: 1;
-    position: absolute;
-    left: 49px;
-    top: 42px;
-    padding: 15px;
-    cursor: pointer;
-  }
-
-  .restaurant-container {
-    max-width: 1440px;
-    margin: -120px auto 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 35px;
-  }
-
-  .restaurant__like-label {
-    position: absolute;
-    top: 35px;
-    right: 50px;
-  }
-  .restaurant__like-label :hover .restaurant__like_active {
-    opacity: 1;
-  }
-
-  .menu {
-    position: relative;
-    gap: 30px;
-  }
-  .menu-title {
-    margin-top: 3%;
-    justify-content: center;
-  }
-  .menu__title {
-    font-size: 43.2px;
-  }
-  .menu-section {
-    gap: 40px;
-    width: 90%;
-  }
-  .menu-section h2 {
-    margin: 40px auto 0px;
-    font-size: 21.6px;
-  }
-  .menu-section h2:after {
-    width: 100%;
-  }
-  .menu-section-card {
-    clip-path: polygon(12% 0, 100% 0, 100% 100%, 0 100%);
-    border-radius: 0;
-    margin: 0 -70px 0 -70px;
-  }
-  .menu-section-card__text {
-    padding-top: 0;
-    padding-left: 110px;
-    gap: 6px;
-  }
-  .menu-section-card__title {
-    font-family: "Shrikhand", cursive;
-    font-weight: normal;
-  }
-  .menu-section-card__subtitle {
-    padding-left: 25px;
-  }
-  .menu-section-card__price {
-    padding-bottom: 17px;
   }
 }
 

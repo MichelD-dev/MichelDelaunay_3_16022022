@@ -1,7 +1,7 @@
-@use '../utils/variables' as *;
-@use '../utils/mixins' as *;
-@use '../base/typography' as *;
-@use '../base/helpers' as *;
+@use '../../utils/variables' as *;
+@use '../../utils/mixins' as *;
+@use '../../base/typography' as *;
+@use '../../base/helpers' as *;
 
 @use 'sass:color';
 
@@ -12,14 +12,14 @@
   gap: 15px;
   text-align: center;
   &__title {
-    font-size: $fs1 * 1.5;
+    font-size: $fs * 1.5;
   }
   &__text {
     font-weight: $light;
-    font-size: $fs1 * 1.1;
+    font-size: $fs * 1.1;
   }
   &__btn {
-    padding: 16px 50px;
+    padding: 16px 25px;
     border-radius: 50px;
     margin-top: 20px;
     background-image: linear-gradient(165deg, $secondary-color, $primary-color);
@@ -45,7 +45,7 @@
   }
 }
 
-@media only screen and (min-width: $desktop-breakpoint) {
+@media only screen and (min-width: $tablet-breakpoint) {
   .description {
     position: absolute;
     top: 150px;
@@ -54,7 +54,7 @@
     gap: 30px;
     padding-top: 70px;
     &__title {
-      font-size: $fs1 * 2;
+      font-size: $fs * 2;
       font-weight: $light;
       font-family: $font-family-cursive;
       color: #333;

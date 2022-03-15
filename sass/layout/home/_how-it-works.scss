@@ -1,6 +1,6 @@
-@use '../utils/variables' as *;
-@use '../utils/mixins' as *;
-@use '../base/typography' as *;
+@use '../../utils/variables' as *;
+@use '../../utils/mixins' as *;
+@use '../../base/typography' as *;
 
 @use 'sass:color';
 
@@ -10,7 +10,7 @@
   padding: 50px 30px 80px;
   &__title {
     align-self: start;
-    font-size: $fs1 * 1.5;
+    font-size: $fs * 1.5;
   }
   &__btn {
     @include flex($justify-content: flex-start);
@@ -64,7 +64,7 @@
   }
 }
 
-@media only screen and (min-width: $desktop-breakpoint) {
+@media only screen and (min-width: $tablet-breakpoint) {
   .how-it-works {
     background-color: whitesmoke;
     flex-direction: row;
@@ -74,14 +74,14 @@
       width: 90%;
       text-align: center;
       margin-bottom: 50px;
-      font-size: $fs1 * 2;
+      font-size: $fs * 2;
       font-weight: $light;
       font-family: $font-family-cursive;
     }
     &__btn {
       width: 25%;
       height: 300px;
-      font-size: $fs1 * 1.3;
+      font-size: $fs * 1.3;
       flex-direction: column-reverse;
       justify-content: center;
       gap: 50px;

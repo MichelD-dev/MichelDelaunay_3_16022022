@@ -1,5 +1,5 @@
-@use '../utils/variables' as *;
-@use '../utils/mixins' as *;
+@use '../../utils/variables' as *;
+@use '../../utils/mixins' as *;
 
 @use 'sass:color';
 
@@ -14,7 +14,7 @@
   background-color: white;
 }
 
-@media only screen and (min-width: $desktop-breakpoint) {
+@media only screen and (min-width: $tablet-breakpoint) {
   .header {
     top: 0;
     width: 100%;

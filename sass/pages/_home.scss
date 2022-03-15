@@ -4,14 +4,15 @@
 @use '../base/base';
 @use '../base/helpers';
 
+
+@use '../layout/home/loader';
+@use '../layout/home/header';
+@use '../layout/home/location';
+@use '../layout/home/description';
+@use '../layout/home/how-it-works';
+@use '../layout/home/restaurants';
+@use '../layout/home/footer';
+
 @use '../components/logo';
 @use '../components/button';
 @use '../components/restaurant-card';
-
-@use '../layout/loader';
-@use '../layout/header';
-@use '../layout/location';
-@use '../layout/description';
-@use '../layout/how-it-works';
-@use '../layout/restaurants';
-@use '../layout/footer';

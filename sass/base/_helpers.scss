@@ -4,10 +4,12 @@
 .container {
   margin-top: 85px;
   @include fadingSlideFromBottom(4, 5);
+  // @include fadingSlideFromBottom(4, 5, 4);
+  @include fadingSlideFromBottom(4, 5);
 }
 
 .restaurant-container > .menu {
-  @include fadingSlideFromBottom(7, 5);
+  @include fadingSlideFromBottom(8, 5);
 }
 
 @media only screen and (min-width: $desktop-breakpoint) {

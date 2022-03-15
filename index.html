@@ -6,9 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Réservation en ligne de menus provenant de restaurants gastronomiques." />
-  <link rel="stylesheet" href="./css/normalize.css" />
   <link rel="stylesheet" href="./css/styles.css" />
-  <!-- <link rel="stylesheet" href="./css/desktopstyle.css" /> -->
   <script src="https://kit.fontawesome.com/9adb84594d.js" crossorigin="anonymous"></script>
   <title>Ohmyfood</title>
 </head>
@@ -46,66 +44,61 @@
   <!------------------------------- LOCATION -------------------------------->
   <!------------------------------------------------------------------------->
 
-  <div class="scroller">
-    <div class="container">
-      <div class="location">
-        <i class="fa-solid fa-location-dot"></i>
-        <input type="search" name="location" placeholder="Paris, Belleville" class="location__input" />
-        <!-- <p>Paris, Belleville</p> -->
+  <div class="container">
+    <div class="location">
+      <i class="fa-solid fa-location-dot"></i>
+      <input type="search" name="location" placeholder="Paris, Belleville" class="location__input" />
+    </div>
+
+    <!------------------------------------------------------------------------->
+    <!------------------------------ DESCRIPTION ------------------------------>
+    <!------------------------------------------------------------------------->
+
+    <section class="description">
+      <h1 class="description__title">Réservez le menu qui vous convient</h1>
+      <p class="description__text">
+        Découvrez des restaurants d'exception, selectionnés par nos soins.
+      </p>
+      <button class="btn description__btn">Explorer nos restaurants</button>
+    </section>
+
+    <!------------------------------------------------------------------------->
+    <!---------------------------- FONCTIONNEMENT ----------------------------->
+    <!------------------------------------------------------------------------->
+
+    <section class="how-it-works">
+      <h2 class="how-it-works__title">Fonctionnement</h2>
+      <div class="btn how-it-works__btn">
+        <div class="how-it-works__step">
+          <span>1</span>
+        </div>
+        <i class="fa-solid fa-mobile-screen-button fa-xl how-it-works__btn-icon"></i>
+        <p>Choisissez un restaurant</p>
       </div>
+      <div class="btn how-it-works__btn">
+        <div class="how-it-works__step">
+          <span>2</span>
+        </div>
+        <i class="fa-solid fa-list fa-xl how-it-works__btn-icon"></i>
+        <p>Composez votre menu</p>
+      </div>
+      <div class="btn how-it-works__btn how-it-works__btn">
+        <div class="how-it-works__step">
+          <span>3</span>
+        </div>
+        <i class="fa-solid fa-store fa-xl how-it-works__btn-icon"></i>
+        <p>Dégustez au restaurant</p>
+      </div>
+    </section>
 
-      <!------------------------------------------------------------------------->
-      <!------------------------------ DESCRIPTION ------------------------------>
-      <!------------------------------------------------------------------------->
+    <!------------------------------------------------------------------------->
+    <!------------------------------ RESTAURANTS ------------------------------>
+    <!------------------------------------------------------------------------->
 
-      <section class="description">
-        <h1 class="description__title">
-          Réservez le menu qui vous convient
-        </h1>
-        <p class="description__text">
-          Découvrez des restaurants d'exception, selectionnés par nos soins.
-        </p>
-        <button class="btn description__btn">
-          <p>Explorer nos restaurants</p>
-        </button>
-      </section>
-
-      <!------------------------------------------------------------------------->
-      <!---------------------------- FONCTIONNEMENT ----------------------------->
-      <!------------------------------------------------------------------------->
-
-      <section class="how-it-works">
-        <h2 class="how-it-works__title">Fonctionnement</h2>
-        <button class="btn how-it-works__btn">
-          <div class="how-it-works__step">
-            <span>1</span>
-          </div>
-          <i class="fa-solid fa-mobile-screen-button fa-xl how-it-works__btn-icon"></i>
-          <p>Choisissez un restaurant</p>
-        </button>
-        <button class="btn how-it-works__btn">
-          <div class="how-it-works__step">
-            <span>2</span>
-          </div>
-          <i class="fa-solid fa-list fa-xl how-it-works__btn-icon"></i>
-          <p>Composez votre menu</p>
-        </button>
-        <button class="btn how-it-works__btn how-it-works__btn">
-          <div class="how-it-works__step">
-            <span>3</span>
-          </div>
-          <i class="fa-solid fa-store fa-xl how-it-works__btn-icon"></i>
-          <p>Dégustez au restaurant</p>
-        </button>
-      </section>
-
-      <!------------------------------------------------------------------------->
-      <!------------------------------ RESTAURANTS ------------------------------>
-      <!------------------------------------------------------------------------->
-
-      <section class="restaurants">
-        <h2 class="restaurants__title">Restaurants</h2>
-        <a href="la-palette-du-gout.html" class="restaurant-card">
+    <section class="restaurants">
+      <h2 class="restaurants__title">Restaurants</h2>
+      <div class="restaurant-card">
+        <a href="la-palette-du-gout.html">
           <div class="restaurant-card__new">
             <p>Nouveau</p>
           </div>
@@ -118,19 +111,21 @@
                 <h3 class="restaurant-card__title">La palette du goût</h3>
                 <p>Ménilmontant</p>
               </div>
-              <input type="checkbox" id="like1" class="restaurant-card__like-btn" />
-              <label for="like1">
-                <div class="restaurant-card__like">
-                  <i class="fa-regular fa-heart"></i>
-                  <div class="restaurant-card__like_active">
-                    <i class="fa-solid fa-heart fill-gradient-linear"></i>
-                  </div>
-                </div>
-              </label>
             </figcaption>
           </figure>
         </a>
-        <a href="la-note-enchantee.html" class="restaurant-card">
+        <div class="restaurant-card__like">
+          <input type="checkbox" id="like1" class="restaurant-card__like-btn" />
+          <label for="like1">
+            <i class="fa-regular fa-heart restaurant-card__like_inactive"></i>
+            <i class="fa-solid fa-heart fill-gradient-linear restaurant-card__like_active"></i>
+          </label>
+        </div>
+      </div>
+
+
+      <div class="restaurant-card">
+        <a href="la-note-enchantee.html">
           <div class="restaurant-card__new">
             <p>Nouveau</p>
           </div>
@@ -143,19 +138,21 @@
                 <h3 class="restaurant-card__title">La note enchantée</h3>
                 <p>Charonne</p>
               </div>
-              <input type="checkbox" id="like2" class="restaurant-card__like-btn" />
-              <label for="like2">
-                <div class="restaurant-card__like">
-                  <i class="fa-regular fa-heart"></i>
-                  <div class="restaurant-card__like_active">
-                    <i class="fa-solid fa-heart"></i>
-                  </div>
-                </div>
-              </label>
             </figcaption>
           </figure>
         </a>
-        <a href="./a-la-francaise.html" class="restaurant-card">
+        <div class="restaurant-card__like">
+          <input type="checkbox" id="like2" class="restaurant-card__like-btn" />
+          <label for="like2">
+            <i class="fa-regular fa-heart restaurant-card__like_inactive"></i>
+            <i class="fa-solid fa-heart fill-gradient-linear restaurant-card__like_active"></i>
+          </label>
+        </div>
+      </div>
+
+
+      <div class="restaurant-card">
+        <a href="./a-la-francaise.html">
           <figure>
             <img class="restaurant-card__image restaurant-card__image_3"
               src="./assets/images/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
@@ -165,19 +162,20 @@
                 <h3 class="restaurant-card__title">A la française</h3>
                 <p>Cité rouge</p>
               </div>
-              <input type="checkbox" id="like3" class="restaurant-card__like-btn" />
-              <label for="like3">
-                <div class="restaurant-card__like">
-                  <i class="fa-regular fa-heart"></i>
-                  <div class="restaurant-card__like_active">
-                    <i class="fa-solid fa-heart"></i>
-                  </div>
-                </div>
-              </label>
             </figcaption>
           </figure>
         </a>
-        <a href="le-delice-des-sens.html" class="restaurant-card">
+        <div class="restaurant-card__like">
+          <input type="checkbox" id="like3" class="restaurant-card__like-btn" />
+          <label for="like3">
+            <i class="fa-regular fa-heart restaurant-card__like_inactive"></i>
+            <i class="fa-solid fa-heart fill-gradient-linear restaurant-card__like_active"></i>
+          </label>
+        </div>
+      </div>
+
+      <div class="restaurant-card">
+        <a href="le-delice-des-sens.html">
           <figure>
             <img class="restaurant-card__image restaurant-card__image_4"
               src="./assets/images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
@@ -187,55 +185,54 @@
                 <h3 class="restaurant-card__title">Le délice des sens</h3>
                 <p>Folie-Méricourt</p>
               </div>
-              <input type="checkbox" id="like4" class="restaurant-card__like-btn" />
-              <label for="like4">
-                <div class="restaurant-card__like">
-                  <i class="fa-regular fa-heart"></i>
-                  <div class="restaurant-card__like_active">
-                    <i class="fa-solid fa-heart"></i>
-                  </div>
-                </div>
-              </label>
             </figcaption>
           </figure>
         </a>
-      </section>
-    </div>
+        <div class="restaurant-card__like">
+          <input type="checkbox" id="like4" class="restaurant-card__like-btn" />
+          <label for="like4">
+            <i class="fa-regular fa-heart restaurant-card__like_inactive"></i>
+            <i class="fa-solid fa-heart fill-gradient-linear restaurant-card__like_active"></i>
+          </label>
+        </div>
+      </div>
+    </section>
 
-    <!------------------------------------------------------------------------->
-    <!-------------------------------- FOOTER --------------------------------->
-    <!------------------------------------------------------------------------->
 
-    <footer class="footer">
-      <h3 class="footer__title">ohmyfood</h3>
-      <nav class="footer__nav">
-        <ul>
-          <li>
-            <a href="#" class="footer__link">
-              <i class="fa-solid fa-utensils footer__link-icon"></i>
-              <p><strong>Proposer un restaurant</strong></p>
-            </a>
-          </li>
-          <li>
-            <a href="mailto:management@ohmyfood.com" class="footer__link">
-              <i class="fa-solid fa-handshake-angle footer__link-icon"></i>
-              <p><strong>Devenir partenaire</strong></p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <p>Mentions légales</p>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="footer__link">
-              <i class="fa-solid fa-envelope footer__link-icon footer__link-icon_hidden"></i>
-              <p>Contact</p>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </footer>
+  <!------------------------------------------------------------------------->
+  <!-------------------------------- FOOTER --------------------------------->
+  <!------------------------------------------------------------------------->
+
+  <footer class="footer">
+    <h3 class="footer__title">ohmyfood</h3>
+    <nav class="footer__nav">
+      <ul>
+        <li>
+          <a href="#" class="footer__link">
+            <i class="fa-solid fa-utensils footer__link-icon"></i>
+            <p><strong>Proposer un restaurant</strong></p>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:management@ohmyfood.com" class="footer__link">
+            <i class="fa-solid fa-handshake-angle footer__link-icon"></i>
+            <p><strong>Devenir partenaire</strong></p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <p>Mentions légales</p>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="footer__link">
+            <i class="fa-solid fa-envelope footer__link-icon footer__link-icon_hidden"></i>
+            <p>Contact</p>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </footer>
   </div>
 </body>
 

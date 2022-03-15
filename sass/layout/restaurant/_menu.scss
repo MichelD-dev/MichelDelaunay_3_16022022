@@ -1,0 +1,167 @@
+@use '../../utils/variables' as *;
+@use '../../utils/mixins' as *;
+
+@use '../../base/typography' as *;
+
+@use 'sass:color';
+
+.menu {
+  width: 100%;
+  @include flex($direction: column);
+  padding: 40px 30px 0;
+  gap: 20px;
+  padding-bottom: 80px;
+  position: relative;
+  &-title {
+    @include flex($justify-content: space-between);
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  &__title {
+    font-family: $font-family-cursive;
+    font-size: $fs * 1.8;
+    font-weight: normal;
+  }
+  &__like {
+    cursor: pointer;
+    color: #666;
+    font-size: $fs * 1.8;
+    position: relative;
+    &_active {
+      color: $primary-color;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 15px;
+      opacity: 0;
+      transition: opacity 250ms;
+    }
+    &-btn:checked + label {
+      .menu__like_active {
+        opacity: 1;
+      }
+    }
+    &-label {
+      position: absolute;
+      top: 40px;
+      right: 50px;
+    }
+  }
+  &-section {
+    @include flex($direction: column);
+    gap: 18px;
+    width: 100%;
+    margin-bottom: 15px;
+    & h2 {
+      align-self: start;
+      padding-bottom: 10px;
+      position: relative;
+      font-weight: $light;
+      margin-top: 15px;
+      &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 47px;
+        border-bottom: 4px solid $tertiary-color;
+      }
+    }
+    &-card {
+      padding: 15px 25px 15px 12px;
+      font-weight: $light;
+      &__title {
+        font-size: $fs * 1.19;
+      }
+      &__text {
+        @include flex($justify-content: space-between);
+        padding: 5px 0 0;
+        font-size: $fs * 0.95;
+      }
+      &__price {
+        font-weight: $normal;
+      }
+    }
+  }
+  &__command-btn {
+    padding: 16px 50px;
+    border-radius: 50px;
+    margin-top: 20px;
+    background-image: linear-gradient(165deg, $secondary-color, $primary-color);
+    background-size: 500%;
+    box-shadow: 3px 5px 10px #ddd;
+    transition: all 0.15s ease-out;
+    color: white;
+    background-position: center;
+    &:hover {
+      background-position: right top;
+      background-image: linear-gradient(
+        305deg,
+        color.scale($secondary-color, $lightness: 10%),
+        color.scale($primary-color, $lightness: 10%)
+      );
+      box-shadow: 5px 5px 15px #ccc;
+    }
+    &:active {
+      transform: scale(0.96);
+      box-shadow: 2px 3px 5px #ddd;
+      background-position: left bottom;
+    }
+   }
+}
+
+@media only screen and (min-width: $tablet-breakpoint) {
+  .menu {
+    position: relative;
+    gap: 30px;
+    &-title {
+      margin-top: 3%;
+      justify-content: center;
+    }
+    &__title {
+      font-size: $fs * 2.4;
+    }
+    &__like-label {
+      position: absolute;
+      top: 35px;
+      right: 50px;
+      :hover {
+        .menu__like_active {
+          opacity: 1;
+        }
+      }
+    }
+    &-section {
+      gap: 40px;
+      width: 90%;
+      & h2 {
+        margin: 40px auto 0px;
+        font-size: $fs * 1.2;
+        &:after {
+          width: 100%;
+        }
+      }
+      &-card {
+        clip-path: polygon(12% 0, 100% 0, 100% 100%, 0 100%);
+        border-radius: 0;
+        margin: 0 -70px 0 -70px;
+        &__text {
+          padding-top: 0;
+          padding-left: 110px;
+          gap: 6px;
+        }
+        &__title {
+          font-family: $font-family-cursive;
+          font-weight: normal;
+        }
+        &__subtitle {
+          padding-left: 25px;
+        }
+        &__price {
+          padding-bottom: 17px;
+        }
+      }
+    }
+  }
+}

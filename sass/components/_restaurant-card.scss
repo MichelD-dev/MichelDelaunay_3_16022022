@@ -1,4 +1,5 @@
 @use '../base/typography' as *;
+
 @use '../utils/variables' as *;
 @use '../utils/mixins' as *;
 
@@ -23,7 +24,7 @@
     top: 20px;
     right: 15px;
     z-index: 10;
-    font-size: $fs1 * 0.9;
+    font-size: $fs * 0.9;
     border-radius: 3px;
     & figure {
       overflow: hidden;
@@ -50,63 +51,50 @@
   }
   &__title {
     padding-bottom: 5px;
-    font-size: $fs1 * 1.1;
+    font-size: $fs * 1.1;
   }
   &__text {
-    @include flex($justify-content: space-between);
-    align-items: start;
     width: 100%;
     padding: 10px 30px 15px 15px;
     & p {
       color: #666;
     }
   }
-  &__like-btn + label {
-    cursor: pointer;
-  }
-  &__like-btn:hover + label,
   &__like-btn:checked + label {
-    & .restaurant-card__like_active {
+    & > .restaurant-card__like_inactive {
+      opacity: 0;
+    }
+    & > .restaurant-card__like_active {
       opacity: 1;
     }
   }
   &__like {
-    color: #666;
-    font-size: $fs1 * 1.8;
-    position: relative;
-    z-index: 1;
-    //   } //FIXME  dégradé de couleur
-    //   //FIXME possible pas de scale sur like?
-    &_active {
-      // background-image: linear-gradient(
-      //   165deg,
-      //   $secondary-color,
-      //   $primary-color
-      // );
-      // background-clip: text;
-      // -webkit-background-clip: text;
-      // color: transparent;
-      color: $primary-color;
-      font-size: $fs1 * 1.8;
+    font-size: $fs * 1.8;
+    & label {
+      cursor: pointer;
+    }
+    &_inactive {
+      color: #666;
       position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 15px;
-      z-index: 1;
-      opacity: 0;
+      bottom: 25px;
+      right: 25px;
+      opacity: 1;
       transition: opacity 250ms;
     }
-    &_menu {
-      margin-right: 20px;
+    &_active {
+      color: $primary-color;
+      position: absolute;
+      bottom: 25px;
+      right: 25px;
+      opacity: 0;
+      transition: opacity 250ms;
     }
   }
 }
 
-@media only screen and (min-width: $desktop-breakpoint) {
+@media only screen and (min-width: $tablet-breakpoint) {
   .restaurant-card {
     overflow: hidden;
-    width: 80%;
     &__image {
       height: 250px;
       clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%);
@@ -118,7 +106,7 @@
       justify-content: space-between;
     }
     &__title {
-      font-size: $fs1 * 1.4;
+      font-size: $fs * 1.4;
       font-weight: $light;
       font-family: $font-family-cursive;
     }
@@ -131,5 +119,23 @@
       border-radius: 0;
       object-position: initial;
     }
+    &__like {
+      &_inactive {
+        position: absolute;
+        bottom: 20px;
+        left: 30px;
+      }
+      &_active {
+        position: absolute;
+        bottom: 20px;
+        left: 30px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $desktop-breakpoint) {
+  .restaurant-card {
+    width: 80%;
   }
 }

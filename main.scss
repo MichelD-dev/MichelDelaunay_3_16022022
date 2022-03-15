@@ -1,15 +1,5 @@
 @charset 'utf-8';
 
-@use 'sass/pages/home';
-@use "sass/pages/restaurant";
+@use './sass/pages/home';
+@use "./sass/pages/restaurant";
 
-// .scroller {
-//   height: 100vh;
-
-//   overflow-y: scroll;
-//   scroll-snap-type: y mandatory;
-// }
-
-// .scroller section {
-//   scroll-snap-align: start;
-// }

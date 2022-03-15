@@ -1,6 +1,6 @@
-@use '../utils/variables' as *;
-@use '../utils/mixins' as *;
-@use '../base/typography' as *;
+@use '../../utils/variables' as *;
+@use '../../utils/mixins' as *;
+@use '../../base/typography' as *;
 
 @use 'sass:color';
 
@@ -11,11 +11,11 @@
   padding: 50px 30px 80px;
   &__title {
     align-self: start;
-    font-size: $fs1 * 1.5;
+    font-size: $fs * 1.5;
   }
 }
 
-@media only screen and (min-width: $desktop-breakpoint) {
+@media only screen and (min-width: $tablet-breakpoint) {
   .restaurants {
     width: 100%;
     gap: 55px;
@@ -24,7 +24,7 @@
       width: 100%;
       text-align: center;
       padding-bottom: 30px;
-      font-size: $fs1 * 2;
+      font-size: $fs * 2;
       font-weight: $light;
       font-family: $font-family-cursive;
     }

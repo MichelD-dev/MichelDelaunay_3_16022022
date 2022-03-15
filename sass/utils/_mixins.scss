@@ -21,12 +21,12 @@
     & > *:nth-child(#{$i}) {
       animation: 1s ease-out fadingSlideFromBottom;
       animation-fill-mode: backwards;
-      animation-delay: #{$i * 0.5 + $initial-delay}s;
+      animation-delay: #{$i * 0.15 + $initial-delay}s;
       @for $i from 1 through $items-nbr-loop2 {
         & > *:nth-child(#{$i}):not(p, input, svg) {
           animation: 1s ease-out fadingSlideFromBottom;
           animation-fill-mode: backwards;
-          animation-delay: #{$i * 0.5}s;
+          animation-delay: #{$i * 0.15}s;
         }
       }
     }
