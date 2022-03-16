@@ -22,30 +22,31 @@
     font-size: $fs * 1.8;
     font-weight: normal;
   }
-  &__like {
-    cursor: pointer;
-    color: #666;
-    font-size: $fs * 1.8;
-    position: relative;
-    &_active {
-      color: $primary-color;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 15px;
+  &__like-btn:checked + label {
+    & > .menu__like_inactive {
       opacity: 0;
+    }
+    & > .menu__like_active {
+      opacity: 1;
+    }
+  }
+  &__like {
+    font-size: $fs * 1.8;
+    & label {
+      cursor: pointer;
+    }
+    &_inactive {
+      color: #666;
+      opacity: 1;
       transition: opacity 250ms;
     }
-    &-btn:checked + label {
-      .menu__like_active {
-        opacity: 1;
-      }
-    }
-    &-label {
-      position: absolute;
-      top: 40px;
-      right: 50px;
+    &_active {
+      font-size: $fs * 1.81;
+      color: $primary-color;
+      position: relative;
+      right: 40px;
+      opacity: 0;
+      transition: opacity 250ms;
     }
   }
   &-section {
@@ -108,7 +109,7 @@
       box-shadow: 2px 3px 5px #ddd;
       background-position: left bottom;
     }
-   }
+  }
 }
 
 @media only screen and (min-width: $tablet-breakpoint) {
@@ -117,21 +118,17 @@
     gap: 30px;
     &-title {
       margin-top: 3%;
-      justify-content: center;
     }
     &__title {
       font-size: $fs * 2.4;
     }
-    &__like-label {
-      position: absolute;
-      top: 35px;
-      right: 50px;
-      :hover {
-        .menu__like_active {
-          opacity: 1;
-        }
-      }
+    &__like_inactive:hover {
+      opacity: 0;
     }
+    &__like_active:hover {
+      opacity: 1;
+    }
+
     &-section {
       gap: 40px;
       width: 90%;

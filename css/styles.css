@@ -558,7 +558,7 @@ figure {
   left: 0;
   z-index: 100;
   background: white;
-  transform: opacity 650ms;
+  transition: opacity 650ms;
   animation: fade-out 0.5s 4.5s;
   animation-fill-mode: both;
 }
@@ -900,6 +900,7 @@ figure {
     padding: 40px 20px;
   }
   .how-it-works__btn p {
+    text-align: center;
     font-weight: 300;
     font-family: "Shrikhand", cursive;
     color: #333;
@@ -944,6 +945,7 @@ figure {
   }
 }
 .footer {
+  width: 100%;
   background-color: #303030;
   color: white;
   padding: 20px 30px 40px;
@@ -1259,29 +1261,30 @@ figure {
   font-size: 32.4px;
   font-weight: normal;
 }
-.menu__like {
-  cursor: pointer;
-  color: #666;
-  font-size: 32.4px;
-  position: relative;
-}
-.menu__like_active {
-  color: #9356dc;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 15px;
+.menu__like-btn:checked + label > .menu__like_inactive {
   opacity: 0;
-  transition: opacity 250ms;
 }
-.menu__like-btn:checked + label .menu__like_active {
+.menu__like-btn:checked + label > .menu__like_active {
   opacity: 1;
 }
-.menu__like-label {
-  position: absolute;
-  top: 40px;
-  right: 50px;
+.menu__like {
+  font-size: 32.4px;
+}
+.menu__like label {
+  cursor: pointer;
+}
+.menu__like_inactive {
+  color: #666;
+  opacity: 1;
+  transition: opacity 250ms;
+}
+.menu__like_active {
+  font-size: 32.58px;
+  color: #9356dc;
+  position: relative;
+  right: 40px;
+  opacity: 0;
+  transition: opacity 250ms;
 }
 .menu-section {
   display: flex;
@@ -1354,17 +1357,14 @@ figure {
   }
   .menu-title {
     margin-top: 3%;
-    justify-content: center;
   }
   .menu__title {
     font-size: 43.2px;
   }
-  .menu__like-label {
-    position: absolute;
-    top: 35px;
-    right: 50px;
+  .menu__like_inactive:hover {
+    opacity: 0;
   }
-  .menu__like-label :hover .menu__like_active {
+  .menu__like_active:hover {
     opacity: 1;
   }
   .menu-section {
