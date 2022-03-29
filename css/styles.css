@@ -1478,32 +1478,23 @@ figure {
   padding-right: 40px;
   font-weight: 700;
 }
-.menu-section-card:hover .menu-section-card__text {
-  width: calc(100% - 165px);
-}
-.menu-section-card:hover .menu-section-card__check {
-  animation: check-bounce 0.75s ease-in-out forwards;
-}
-.menu-section-card:hover .menu-section-card__check > .menu-section-card__check-icon {
-  transform: rotate(0deg);
-}
-.menu-section-card:hover .menu-section-card__price {
-  animation: price-bounce 0.75s ease-out forwards;
-}
 
 input[type=checkbox] {
   display: none;
 }
-input[type=checkbox]:checked ~ .menu-section-card__check {
-  transform: translateX(20px);
-  animation: none;
-}
-input[type=checkbox]:checked ~ .menu-section-card__check > .menu-section-card__check-icon {
-  transform: none;
-}
-input[type=checkbox]:checked ~ .menu-section-card__check > .menu-section-card__price {
-  transform: translateX(20px);
-  animation: none;
+@media only screen and (max-width: 767px) {
+  input[type=checkbox]:checked ~ .menu-section-card__text {
+    width: calc(100% - 165px);
+  }
+  input[type=checkbox]:checked ~ .menu-section-card__check {
+    animation: check-bounce 0.75s ease-in-out forwards;
+  }
+  input[type=checkbox]:checked ~ .menu-section-card__check > .menu-section-card__check-icon {
+    transform: rotate(0deg);
+  }
+  input[type=checkbox]:checked ~ .menu-section-card__check > .menu-section-card__price {
+    animation: price-bounce 0.75s ease-out forwards;
+  }
 }
 
 @keyframes check-bounce {
@@ -1537,6 +1528,20 @@ input[type=checkbox]:checked ~ .menu-section-card__check > .menu-section-card__p
   }
   100% {
     transform: translateX(20px);
+  }
+}
+@media only screen and (min-width: 768px) {
+  .menu-section-card:hover .menu-section-card__text {
+    width: calc(100% - 165px);
+  }
+  .menu-section-card:hover .menu-section-card__check {
+    animation: check-bounce 0.75s ease-in-out forwards;
+  }
+  .menu-section-card:hover .menu-section-card__check > .menu-section-card__check-icon {
+    transform: rotate(0deg);
+  }
+  .menu-section-card:hover .menu-section-card__price {
+    animation: price-bounce 0.75s ease-out forwards;
   }
 }
 

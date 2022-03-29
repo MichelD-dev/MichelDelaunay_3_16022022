@@ -1,5 +1,8 @@
 @use '../utils/mixins' as *;
+
 @use '../base/typography' as *;
+
+@use '../utils/variables' as *;
 
 .menu-section-card {
   @include flex($justify-content: space-between);
@@ -59,33 +62,22 @@
     padding-right: 40px;
     font-weight: $bold;
   }
-
-  &:hover &__text {
-    width: calc(100% - 165px);
-  }
-
-  &:hover &__check {
-    animation: check-bounce 0.75s ease-in-out forwards;
-    & > .menu-section-card__check-icon {
-      transform: rotate(0deg);
-    }
-  }
-  &:hover &__price {
-    animation: price-bounce 0.75s ease-out forwards;
-  }
 }
-
 input[type='checkbox'] {
   display: none;
-  &:checked ~ .menu-section-card__check {
-    transform: translateX(20px);
-    animation: none;
-    & > .menu-section-card__check-icon {
-      transform: none;
+  @media only screen and (max-width: ($tablet-breakpoint - 1px)) {
+    &:checked ~ .menu-section-card__text {
+      width: calc(100% - 165px);
     }
-    & > .menu-section-card__price {
-      transform: translateX(20px);
-      animation: none;
+    &:checked ~ .menu-section-card__check {
+      animation: check-bounce 0.75s ease-in-out forwards;
+
+      & > .menu-section-card__check-icon {
+        transform: rotate(0deg);
+      }
+      & > .menu-section-card__price {
+        animation: price-bounce 0.75s ease-out forwards;
+      }
     }
   }
 }
@@ -126,3 +118,20 @@ input[type='checkbox'] {
   }
 }
 
+@media only screen and (min-width: $tablet-breakpoint) {
+  .menu-section-card {
+    &:hover &__text {
+      width: calc(100% - 165px);
+    }
+
+    &:hover &__check {
+      animation: check-bounce 0.75s ease-in-out forwards;
+      & > .menu-section-card__check-icon {
+        transform: rotate(0deg);
+      }
+    }
+    &:hover &__price {
+      animation: price-bounce 0.75s ease-out forwards;
+    }
+  }
+}
