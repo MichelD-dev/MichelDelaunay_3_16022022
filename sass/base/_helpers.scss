@@ -4,7 +4,7 @@
 .container {
   margin-top: 85px;
   @include fadingSlideFromBottom(4, 5);
-  // @include fadingSlideFromBottom(4, 5, 4);
+  // @include fadingSlideFromBottom(4, 5, 3.5);
   @include fadingSlideFromBottom(4, 5);
 }
 

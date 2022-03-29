@@ -6,6 +6,7 @@
 @use 'sass:color';
 
 .description {
+  width: 100%;
   @include flex($direction: column);
   background-color: color.scale($quaternary-color, $lightness: 95%);
   padding: 40px 40px 70px;
