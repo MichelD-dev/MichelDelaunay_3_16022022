@@ -1,241 +1,251 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Réservation en ligne de menus provenant de restaurants gastronomiques."
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+     <script
+      src="https://kit.fontawesome.com/9adb84594d.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Ohmyfood | À la française</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Réservation en ligne de menus provenant de restaurants gastronomiques." />
-  <link rel="stylesheet" href="./css/normalize.css" />
-  <link rel="stylesheet" href="./css/styles.css" />
-  <!-- <link rel="stylesheet" href="./css/desktoprestaustyle.css" /> -->
-  <script src="https://kit.fontawesome.com/9adb84594d.js" crossorigin="anonymous"></script>
-  <title>Ohmyfood | À la française</title>
-</head>
-
-<body>
-  <!------------------------------------------------------------------------->
-  <!-------------------------------- HEADER --------------------------------->
-  <!------------------------------------------------------------------------->
-  <header class="restaurant-header">
-    <a href="./index.html" class="">
-      <i class="restaurant-header__logo-icon fa-solid fa-arrow-left"></i>
-      <div class="restaurant-header__logo">
-        <img src="./assets/logo/ohmyfood.png" alt="Logo Ohmyfood" />
-      </div>
-    </a>
-  </header>
-
-  <!------------------------------------------------------------------------->
-  <!--------------------------------- MENU ---------------------------------->
-  <!------------------------------------------------------------------------->
-
-  <div class="restaurant-header__image restaurant-header__image_3"></div>
-  <div class="restaurant-container">
-    <div class="menu">
-      <div class="menu-title">
-        <h1 class="menu__title">A la française</h1>
-        <div class="menu__like">
-          <input type="checkbox" id="like" class="menu__like-btn" />
-          <label class="menu__like-label" for="like">
-            <i class="fa-regular fa-heart menu__like_inactive"></i>
-            <i class="fa-solid fa-heart menu__like_active"></i>
-          </label>
+  <body>
+    <!------------------------------------------------------------------------->
+    <!-------------------------------- HEADER --------------------------------->
+    <!------------------------------------------------------------------------->
+    <header class="restaurant-header">
+      <a href="./index.html" class="">
+        <i class="restaurant-header__logo-icon fa-solid fa-arrow-left"></i>
+        <div class="restaurant-header__logo">
+          <img src="./assets/logo/ohmyfood.png" alt="Logo Ohmyfood" />
         </div>
+      </a>
+    </header>
+
+    <!------------------------------------------------------------------------->
+    <!--------------------------------- MENU ---------------------------------->
+    <!------------------------------------------------------------------------->
+
+    <div class="restaurant-header__image restaurant-header__image_3"></div>
+    <div class="restaurant-container">
+      <div class="menu">
+        <div class="menu-title">
+          <h1 class="menu__title">A la française</h1>
+          <div class="menu__like">
+            <input type="checkbox" id="like" class="menu__like-btn" />
+            <label class="menu__like-label" for="like">
+              <i class="fa-regular fa-heart menu__like_inactive"></i>
+              <i class="fa-solid fa-heart menu__like_active"></i>
+            </label>
+          </div>
+        </div>
+
+        <!------------------------------ ENTREES ------------------------------>
+
+        <section class="menu-section">
+          <h2>ENTRÉES</h2>
+          <div class="restaurant-card menu-section-card">
+            <label for="checkbox-1" class="menu-section-card__checkbox"></label>
+            <input type="checkbox" name="checkbox-1" id="checkbox-1" />
+            <div class="menu-section-card__text">
+              <h3 class="menu-section-card__title">
+                Tartare de poulpe acidulé
+              </h3>
+              <p class="menu-section-card__subtitle">Aux zestes d'orange</p>
+            </div>
+            <div class="menu-section-card__check">
+              <span class="menu-section-card__price">25€</span>
+              <div class="menu-section-card__check-icon">
+                <i class="fa-solid fa-check"></i>
+              </div>
+            </div>
+          </div>
+          <div class="restaurant-card menu-section-card">
+            <label for="checkbox-2" class="menu-section-card__checkbox"></label>
+            <input type="checkbox" name="checkbox-2" id="checkbox-2" />
+            <div class="menu-section-card__text">
+              <h3 class="menu-section-card__title">
+                Velouté de légumes d'antan
+              </h3>
+              <p class="menu-section-card__subtitle">
+                Carotte, panais, topinambour
+              </p>
+            </div>
+            <div class="menu-section-card__check">
+              <span class="menu-section-card__price">35€</span>
+              <div class="menu-section-card__check-icon">
+                <i class="fa-solid fa-check"></i>
+              </div>
+            </div>
+          </div>
+          <div class="restaurant-card menu-section-card">
+            <label for="checkbox-3" class="menu-section-card__checkbox"></label>
+            <input type="checkbox" name="checkbox-3" id="checkbox-3" />
+            <div class="menu-section-card__text">
+              <h3 class="menu-section-card__title">Soupe à l'oignon</h3>
+              <p class="menu-section-card__subtitle">Revisitée</p>
+            </div>
+            <div class="menu-section-card__check">
+              <span class="menu-section-card__price">20€</span>
+              <div class="menu-section-card__check-icon">
+                <i class="fa-solid fa-check"></i>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!------------------------------ PLATS ------------------------------>
+
+        <section class="menu-section">
+          <h2 class="">PLATS</h2>
+          <div class="restaurant-card menu-section-card">
+            <label for="checkbox-4" class="menu-section-card__checkbox"></label>
+            <input type="checkbox" name="checkbox-4" id="checkbox-4" />
+            <div class="menu-section-card__text">
+              <h3 class="menu-section-card__title">Coquilles Saint-Jacques</h3>
+              <p class="menu-section-card__subtitle">
+                Accompagnées d'une purée de panais
+              </p>
+            </div>
+            <div class="menu-section-card__check">
+              <span class="menu-section-card__price">40€</span>
+              <div class="menu-section-card__check-icon">
+                <i class="fa-solid fa-check"></i>
+              </div>
+            </div>
+          </div>
+          <div class="restaurant-card menu-section-card">
+            <label for="checkbox-5" class="menu-section-card__checkbox"></label>
+            <input type="checkbox" name="checkbox-5" id="checkbox-5" />
+            <div class="menu-section-card__text">
+              <h3 class="menu-section-card__title">Magret de canard</h3>
+              <p class="menu-section-card__subtitle">
+                Et parmentier de pommes de terre
+              </p>
+            </div>
+            <div class="menu-section-card__check">
+              <span class="menu-section-card__price">35€</span>
+              <div class="menu-section-card__check-icon">
+                <i class="fa-solid fa-check"></i>
+              </div>
+            </div>
+          </div>
+          <div class="restaurant-card menu-section-card">
+            <label for="checkbox-6" class="menu-section-card__checkbox"></label>
+            <input type="checkbox" name="checkbox-6" id="checkbox-6" />
+            <div class="menu-section-card__text">
+              <h3 class="menu-section-card__title">
+                Pigeonneau d’Ille-et-Vilaine
+              </h3>
+              <p class="menu-section-card__subtitle">
+                Sur son lit de gnocchis aux légumes
+              </p>
+            </div>
+            <div class="menu-section-card__check">
+              <span class="menu-section-card__price">44€</span>
+              <div class="menu-section-card__check-icon">
+                <i class="fa-solid fa-check"></i>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!------------------------------ DESSERTS ------------------------------>
+
+        <section class="menu-section">
+          <h2>DESSERTS</h2>
+          <div class="restaurant-card menu-section-card">
+            <label for="checkbox-7" class="menu-section-card__checkbox"></label>
+            <input type="checkbox" name="checkbox-7" id="checkbox-7" />
+            <div class="menu-section-card__text">
+              <h3 class="menu-section-card__title">
+                Pétales de violettes glacés
+              </h3>
+              <p class="menu-section-card__subtitle">Et purée de noisettes</p>
+            </div>
+            <div class="menu-section-card__check">
+              <span class="menu-section-card__price">18€</span>
+              <div class="menu-section-card__check-icon">
+                <i class="fa-solid fa-check"></i>
+              </div>
+            </div>
+          </div>
+          <div class="restaurant-card menu-section-card">
+            <label for="checkbox-8" class="menu-section-card__checkbox"></label>
+            <input type="checkbox" name="checkbox-8" id="checkbox-8" />
+            <div class="menu-section-card__text">
+              <h3 class="menu-section-card__title">Fondant au chocolat</h3>
+              <p class="menu-section-card__subtitle">Revisité</p>
+            </div>
+            <div class="menu-section-card__check">
+              <span class="menu-section-card__price">22€</span>
+              <div class="menu-section-card__check-icon">
+                <i class="fa-solid fa-check"></i>
+              </div>
+            </div>
+          </div>
+          <div class="restaurant-card menu-section-card">
+            <label for="checkbox-9" class="menu-section-card__checkbox"></label>
+            <input type="checkbox" name="checkbox-9" id="checkbox-9" />
+            <div class="menu-section-card__text">
+              <h3 class="menu-section-card__title">
+                Millefeuille croustillant
+              </h3>
+              <p class="menu-section-card__subtitle">
+                Myrtilles et pâte d’amande
+              </p>
+            </div>
+            <div class="menu-section-card__check">
+              <span class="menu-section-card__price">23€</span>
+              <div class="menu-section-card__check-icon">
+                <i class="fa-solid fa-check"></i>
+              </div>
+            </div>
+          </div>
+        </section>
+        <button class="btn menu__command-btn">Commander</button>
       </div>
-
-
-      <!------------------------------ ENTREES ------------------------------>
-
-      <section class="menu-section">
-        <h2>ENTRÉES</h2>
-        <label class="restaurant-card menu-section-card">
-          <input type="checkbox" id="checkbox-1" />
-          <div class="menu-section-card__text">
-            <h3 class="menu-section-card__title">Tartare de poulpe acidulé</h3>
-            <p class="menu-section-card__subtitle">Aux zestes d'orange</p>
-          </div>
-          <div class="menu-section-card__check">
-            <span class="menu-section-card__price">25€</span>
-            <div class="menu-section-card__check-icon">
-              <i class="fa-solid fa-check"></i>
-            </div>
-          </div>
-        </label>
-        <label class="restaurant-card menu-section-card">
-          <input type="checkbox" id="checkbox-2" />
-          <div class="menu-section-card__text">
-            <h3 class="menu-section-card__title">
-              Velouté de légumes d'antan
-            </h3>
-            <p class="menu-section-card__subtitle">
-              Carotte, panais, topinambour
-            </p>
-          </div>
-          <div class="menu-section-card__check">
-            <span class="menu-section-card__price">35€</span>
-            <div class="menu-section-card__check-icon">
-              <i class="fa-solid fa-check"></i>
-            </div>
-          </div>
-        </label>
-        <label class="restaurant-card menu-section-card">
-          <input type="checkbox" id="checkbox-3" />
-          <div class="menu-section-card__text">
-            <h3 class="menu-section-card__title">Soupe à l'oignon</h3>
-            <p class="menu-section-card__subtitle">
-              Revisitée
-            </p>
-          </div>
-          <div class="menu-section-card__check">
-            <span class="menu-section-card__price">20€</span>
-            <div class="menu-section-card__check-icon">
-              <i class="fa-solid fa-check"></i>
-            </div>
-          </div>
-        </label>
-      </section>
-
-      <!------------------------------ PLATS ------------------------------>
-
-      <section class="menu-section">
-        <h2 class="">PLATS</h2>
-        <label class="restaurant-card menu-section-card">
-          <input type="checkbox" id="checkbox-4" />
-          <div class="menu-section-card__text">
-            <h3 class="menu-section-card__title">
-              Coquilles Saint-Jacques
-            </h3>
-            <p class="menu-section-card__subtitle">
-              Accompagnées d'une purée de panais
-            </p>
-          </div>
-          <div class="menu-section-card__check">
-            <span class="menu-section-card__price">40€</span>
-            <div class="menu-section-card__check-icon">
-              <i class="fa-solid fa-check"></i>
-            </div>
-          </div>
-        </label>
-        <label class="restaurant-card menu-section-card">
-          <input type="checkbox" id="checkbox-5" />
-          <div class="menu-section-card__text">
-            <h3 class="menu-section-card__title">
-              Magret de canard
-            </h3>
-            <p class="menu-section-card__subtitle">
-              Et parmentier de pommes de terre
-            </p>
-          </div>
-          <div class="menu-section-card__check">
-            <span class="menu-section-card__price">35€</span>
-            <div class="menu-section-card__check-icon">
-              <i class="fa-solid fa-check"></i>
-            </div>
-          </div>
-        </label>
-        <label class="restaurant-card menu-section-card">
-          <input type="checkbox" id="checkbox-6" />
-          <div class="menu-section-card__text">
-            <h3 class="menu-section-card__title">Pigeonneau d’Ille-et-Vilaine</h3>
-            <p class="menu-section-card__subtitle">Sur son lit de gnocchis aux légumes</p>
-          </div>
-          <div class="menu-section-card__check">
-            <span class="menu-section-card__price">44€</span>
-            <div class="menu-section-card__check-icon">
-              <i class="fa-solid fa-check"></i>
-            </div>
-          </div>
-        </label>
-      </section>
-
-      <!------------------------------ DESSERTS ------------------------------>
-
-      <section class="menu-section">
-        <h2>DESSERTS</h2>
-        <label class="restaurant-card menu-section-card">
-          <input type="checkbox" id="checkbox-7" />
-          <div class="menu-section-card__text">
-            <h3 class="menu-section-card__title">Pétales de violettes glacés</h3>
-            <p class="menu-section-card__subtitle">Et purée de noisettes</p>
-          </div>
-          <div class="menu-section-card__check">
-            <span class="menu-section-card__price">18€</span>
-            <div class="menu-section-card__check-icon">
-              <i class="fa-solid fa-check"></i>
-            </div>
-          </div>
-        </label>
-        <label class="restaurant-card menu-section-card">
-          <input type="checkbox" id="checkbox-8" />
-          <div class="menu-section-card__text">
-            <h3 class="menu-section-card__title">
-              Fondant au chocolat
-            </h3>
-            <p class="menu-section-card__subtitle">
-              Revisité
-            </p>
-          </div>
-          <div class="menu-section-card__check">
-            <span class="menu-section-card__price">22€</span>
-            <div class="menu-section-card__check-icon">
-              <i class="fa-solid fa-check"></i>
-            </div>
-          </div>
-        </label>
-        <label class="restaurant-card menu-section-card">
-          <input type="checkbox" id="checkbox-9" />
-          <div class="menu-section-card__text">
-            <h3 class="menu-section-card__title">Millefeuille croustillant</h3>
-            <p class="menu-section-card__subtitle">
-              Myrtilles et pâte d’amande
-            </p>
-          </div>
-          <div class="menu-section-card__check">
-            <span class="menu-section-card__price">23€</span>
-            <div class="menu-section-card__check-icon">
-              <i class="fa-solid fa-check"></i>
-            </div>
-          </div>
-        </label>
-      </section>
-      <button class="btn menu__command-btn">Commander</button>
     </div>
-  </div>
-  <!------------------------------------------------------------------------->
-  <!-------------------------------- FOOTER --------------------------------->
-  <!------------------------------------------------------------------------->
+    <!------------------------------------------------------------------------->
+    <!-------------------------------- FOOTER --------------------------------->
+    <!------------------------------------------------------------------------->
 
-  <footer class="footer">
-    <h3 class="footer__title">ohmyfood</h3>
-    <nav class="footer__nav">
-      <ul>
-        <li>
-          <a href="#" class="footer__link">
-            <i class="fa-solid fa-utensils footer__link-icon"></i>
-            <p><strong>Proposer un restaurant</strong></p>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="footer__link">
-            <i class="fa-solid fa-handshake-angle footer__link-icon"></i>
-            <p><strong>Devenir partenaire</strong></p>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <p>Mentions légales</p>
-          </a>
-        </li>
-        <li>
-          <a href="mailto:management@ohmyfood.com">
-            <p>Contact</p>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </footer>
-
-</body>
-
+    <footer class="footer">
+      <h3 class="footer__title">ohmyfood</h3>
+      <nav class="footer__nav">
+        <ul>
+          <li>
+            <a href="#" class="footer__link">
+              <i class="fa-solid fa-utensils footer__link-icon"></i>
+              <p><strong>Proposer un restaurant</strong></p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer__link">
+              <i class="fa-solid fa-handshake-angle footer__link-icon"></i>
+              <p><strong>Devenir partenaire</strong></p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <p>Mentions légales</p>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:management@ohmyfood.com">
+              <p>Contact</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
 </html>

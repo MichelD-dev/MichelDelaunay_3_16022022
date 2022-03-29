@@ -8,7 +8,6 @@
   <meta name="description" content="Réservation en ligne de menus provenant de restaurants gastronomiques." />
   <link rel="stylesheet" href="./css/normalize.css" />
   <link rel="stylesheet" href="./css/styles.css" />
-  <!-- <link rel="stylesheet" href="./css/desktoprestaustyle.css" /> -->
   <script src="https://kit.fontawesome.com/9adb84594d.js" crossorigin="anonymous"></script>
   <title>Ohmyfood | La palette du goût</title>
 </head>
@@ -48,8 +47,9 @@
 
       <section class="menu-section">
         <h2>ENTRÉES</h2>
-        <label class="restaurant-card menu-section-card">
-          <input type="checkbox" id="checkbox-1" class="menu-section-card__text" />
+        <div class="restaurant-card menu-section-card">
+          <label for="checkbox-1" class="menu-section-card__checkbox"></label>
+          <input type="checkbox" name="checkbox-1" id="checkbox-1" />
           <div class="menu-section-card__text">
             <h3 class="menu-section-card__title">Fricassée d'escargot</h3>
             <p class="menu-section-card__subtitle">Au piment d'Espelette</p>
@@ -60,9 +60,10 @@
               <i class="fa-solid fa-check"></i>
             </div>
           </div>
-        </label>
-        <label class="restaurant-card menu-section-card">
-          <input type="checkbox" id="checkbox-2" />
+        </div>
+        <div class="restaurant-card menu-section-card">
+          <label for="checkbox-2" class="menu-section-card__checkbox"></label>
+          <input type="checkbox" name="checkbox-2" id="checkbox-2" />
           <div class="menu-section-card__text">
             <h3 class="menu-section-card__title">
               Foie gras de canard mi-cuit
@@ -77,9 +78,10 @@
               <i class="fa-solid fa-check"></i>
             </div>
           </div>
-        </label>
-        <label class="restaurant-card menu-section-card">
-          <input type="checkbox" id="checkbox-3" />
+        </div>
+        <div class="restaurant-card menu-section-card">
+          <label for="checkbox-3" class="menu-section-card__checkbox"></label>
+          <input type="checkbox" name="checkbox-3" id="checkbox-3" />
           <div class="menu-section-card__text">
             <h3 class="menu-section-card__title">Oeuf au plat</h3>
             <p class="menu-section-card__subtitle">
@@ -92,15 +94,16 @@
               <i class="fa-solid fa-check"></i>
             </div>
           </div>
-        </label>
+        </div>
       </section>
 
       <!------------------------------ PLATS ------------------------------>
 
       <section class="menu-section">
         <h2 class="">PLATS</h2>
-        <label class="restaurant-card menu-section-card">
-          <input type="checkbox" id="checkbox-4" />
+        <div class="restaurant-card menu-section-card">
+          <label for="checkbox-4" class="menu-section-card__checkbox"></label>
+          <input type="checkbox" name="checkbox-4" id="checkbox-4" />
           <div class="menu-section-card__text">
             <h3 class="menu-section-card__title">
               Filet de boeuf aux herbes
@@ -115,9 +118,10 @@
               <i class="fa-solid fa-check"></i>
             </div>
           </div>
-        </label>
-        <label class="restaurant-card menu-section-card">
-          <input type="checkbox" id="checkbox-5" />
+        </div>
+        <div class="restaurant-card menu-section-card">
+          <label for="checkbox-5" class="menu-section-card__checkbox"></label>
+          <input type="checkbox" name="checkbox-5" id="checkbox-5" />
           <div class="menu-section-card__text">
             <h3 class="menu-section-card__title">
               Parmentier de queue de boeuf
@@ -132,9 +136,10 @@
               <i class="fa-solid fa-check"></i>
             </div>
           </div>
-        </label>
-        <label class="restaurant-card menu-section-card">
-          <input type="checkbox" id="checkbox-6" />
+        </div>
+        <div class="restaurant-card menu-section-card">
+          <label for="checkbox-6" class="menu-section-card__checkbox"></label>
+          <input type="checkbox" name="checkbox-6" id="checkbox-6" />
           <div class="menu-section-card__text">
             <h3 class="menu-section-card__title">Filet de turbot</h3>
             <p class="menu-section-card__subtitle">Aux agrumes</p>
@@ -145,15 +150,16 @@
               <i class="fa-solid fa-check"></i>
             </div>
           </div>
-        </label>
+        </div>
       </section>
 
       <!------------------------------ DESSERTS ------------------------------>
 
       <section class="menu-section">
         <h2>DESSERTS</h2>
-        <label class="restaurant-card menu-section-card">
-          <input type="checkbox" id="checkbox-7" />
+        <div class="restaurant-card menu-section-card">
+          <label for="checkbox-7" class="menu-section-card__checkbox"></label>
+          <input type="checkbox" name="checkbox-7" id="checkbox-7" />
           <div class="menu-section-card__text">
             <h3 class="menu-section-card__title">Paris-Brest</h3>
             <p class="menu-section-card__subtitle">Revisité</p>
@@ -164,9 +170,10 @@
               <i class="fa-solid fa-check"></i>
             </div>
           </div>
-        </label>
-        <label class="restaurant-card menu-section-card">
-          <input type="checkbox" id="checkbox-8" />
+        </div>
+        <div class="restaurant-card menu-section-card">
+          <label for="checkbox-8" class="menu-section-card__checkbox"></label>
+          <input type="checkbox" name="checkbox-8" id="checkbox-8" />
           <div class="menu-section-card__text">
             <h3 class="menu-section-card__title">
               Macaron au chocolat d'exception
@@ -181,9 +188,10 @@
               <i class="fa-solid fa-check"></i>
             </div>
           </div>
-        </label>
-        <label class="restaurant-card menu-section-card">
-          <input type="checkbox" id="checkbox-9" />
+        </div>
+        <div class="restaurant-card menu-section-card">
+          <label for="checkbox-9" class="menu-section-card__checkbox"></label>
+          <input type="checkbox" name="checkbox-9" id="checkbox-9" />
           <div class="menu-section-card__text">
             <h3 class="menu-section-card__title">Mousse au chocolat</h3>
             <p class="menu-section-card__subtitle">
@@ -196,7 +204,7 @@
               <i class="fa-solid fa-check"></i>
             </div>
           </div>
-        </label>
+        </div>
       </section>
       <button class="btn menu__command-btn">Commander</button>
     </div>

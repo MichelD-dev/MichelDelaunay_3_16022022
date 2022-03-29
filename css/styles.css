@@ -182,7 +182,7 @@ figure {
 .container > *:nth-child(1) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 0.15s;
+  animation-delay: 3.75s;
 }
 .container > *:nth-child(1) > *:nth-child(1):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
@@ -212,7 +212,7 @@ figure {
 .container > *:nth-child(2) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 0.3s;
+  animation-delay: 3.9s;
 }
 .container > *:nth-child(2) > *:nth-child(1):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
@@ -242,7 +242,7 @@ figure {
 .container > *:nth-child(3) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 0.45s;
+  animation-delay: 4.05s;
 }
 .container > *:nth-child(3) > *:nth-child(1):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
@@ -272,7 +272,7 @@ figure {
 .container > *:nth-child(4) {
   animation: 1s ease-out fadingSlideFromBottom;
   animation-fill-mode: backwards;
-  animation-delay: 0.6s;
+  animation-delay: 4.2s;
 }
 .container > *:nth-child(4) > *:nth-child(1):not(p, input, svg) {
   animation: 1s ease-out fadingSlideFromBottom;
@@ -1200,17 +1200,17 @@ figure {
   background-position: -25px 0;
 }
 .restaurant-header__image_1 {
-  background-image: url("../../assets/images/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  background-image: url("../assets/images/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
 }
 .restaurant-header__image_2 {
-  background-image: url("../../assets/images/stil-u2Lp8tXIcjw-unsplash.jpg");
+  background-image: url("../assets/images/stil-u2Lp8tXIcjw-unsplash.jpg");
   background-position: center;
 }
 .restaurant-header__image_3 {
-  background-image: url("../../assets/images/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  background-image: url("../assets/images/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
 }
 .restaurant-header__image_4 {
-  background-image: url("../../assets/images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+  background-image: url("../assets/images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
 }
 
 @media only screen and (min-width: 768px) {
@@ -1410,6 +1410,7 @@ figure {
   }
 }
 .menu-section-card {
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -1417,8 +1418,15 @@ figure {
   height: 84px;
   overflow: hidden;
   padding: 0 0 0 12px;
-  cursor: pointer;
   transition: transform 0.1s ease-out;
+}
+.menu-section-card__checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
 }
 .menu-section-card:active {
   transform: scale(0.98);
@@ -1482,19 +1490,17 @@ figure {
 input[type=checkbox] {
   display: none;
 }
-@media only screen and (max-width: 767px) {
-  input[type=checkbox]:checked ~ .menu-section-card__text {
-    width: calc(100% - 165px);
-  }
-  input[type=checkbox]:checked ~ .menu-section-card__check {
-    animation: check-bounce 0.75s ease-in-out forwards;
-  }
-  input[type=checkbox]:checked ~ .menu-section-card__check > .menu-section-card__check-icon {
-    transform: rotate(0deg);
-  }
-  input[type=checkbox]:checked ~ .menu-section-card__check > .menu-section-card__price {
-    animation: price-bounce 0.75s ease-out forwards;
-  }
+input[type=checkbox]:checked ~ .menu-section-card__text {
+  width: calc(100% - 165px);
+}
+input[type=checkbox]:checked ~ .menu-section-card__check {
+  animation: check-bounce 0.75s ease-in-out forwards;
+}
+input[type=checkbox]:checked ~ .menu-section-card__check > .menu-section-card__check-icon {
+  transform: rotate(0deg);
+}
+input[type=checkbox]:checked ~ .menu-section-card__check > .menu-section-card__price {
+  animation: price-bounce 0.75s ease-out forwards;
 }
 
 @keyframes check-bounce {
