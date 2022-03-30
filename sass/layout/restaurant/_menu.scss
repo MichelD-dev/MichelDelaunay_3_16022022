@@ -37,16 +37,21 @@
     font-size: $fs * 1.8;
     & label {
       cursor: pointer;
+      position: relative;
     }
     &_inactive {
       color: #666;
+      position: absolute;
+      top: -15px;
+      right: 40px;
       opacity: 1;
       transition: opacity 250ms;
     }
     &_active {
       font-size: $fs * 1.81;
       color: $primary-color;
-      position: relative;
+      position: absolute;
+      top: -15px;
       right: 40px;
       opacity: 0;
       transition: opacity 250ms;
